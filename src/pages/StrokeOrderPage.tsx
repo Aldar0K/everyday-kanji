@@ -28,20 +28,6 @@ export function StrokeOrderPage() {
 
   const strokes = kanji.strokes
 
-  if (!strokes || strokes.length === 0) {
-    return (
-      <div className="flex min-h-dvh flex-col gap-5 px-6 pt-[66px] pb-10">
-        <PageHeader label={`Урок ${day} · шаг 3 из 3`} onBack={() => navigate(`/day/${day}/breakdown`)} />
-        <div className="flex flex-1 flex-col items-center justify-center gap-3 text-center">
-          <p className="text-neutral-600">Порядок черт для этого знака скоро появится.</p>
-        </div>
-        <Button variant="pill-accent2" size="block" onClick={handleComplete}>
-          Урок пройден
-        </Button>
-      </div>
-    )
-  }
-
   return (
     <div className="flex min-h-dvh flex-col items-center gap-5 px-6 pt-[66px] pb-10">
       <PageHeader label={`Урок ${day} · шаг 3 из 3`} onBack={() => navigate(`/day/${day}/breakdown`)} className="flex w-full items-center gap-3" />

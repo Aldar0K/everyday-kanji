@@ -28,8 +28,7 @@ export interface Kanji {
   jlptLevel: string
   strokeCount: number
   exampleWords: ExampleWord[]
-  /** Undefined for kanji whose stroke order hasn't been authored yet. */
-  strokes?: Stroke[]
+  strokes: Stroke[]
   /** Short prose description of the writing order, shown under the stroke canvas. */
-  writingNote?: string
+  writingNote: string
 }
