@@ -1,4 +1,6 @@
+import { motion } from 'motion/react'
 import { cn } from '@/lib/utils'
+import { pressable } from '@/lib/motion'
 
 interface BackButtonProps {
   onClick?: () => void
@@ -7,10 +9,12 @@ interface BackButtonProps {
 
 export function BackButton({ onClick, className }: BackButtonProps) {
   return (
-    <button
+    <motion.button
       type="button"
       onClick={onClick}
       aria-label="Назад"
+      whileTap={pressable.whileTap}
+      transition={pressable.transition}
       className={cn(
         'flex size-[38px] shrink-0 items-center justify-center rounded-full bg-surface transition-colors hover:bg-neutral-300',
         className,
@@ -25,6 +29,6 @@ export function BackButton({ onClick, className }: BackButtonProps) {
           strokeLinejoin="round"
         />
       </svg>
-    </button>
+    </motion.button>
   )
 }

@@ -1,3 +1,5 @@
+import { Fragment } from 'react'
+import { motion } from 'motion/react'
 import { useNavigate } from 'react-router-dom'
 import { TrailConnector } from '@/components/trail/TrailConnector'
 import { TrailFooter } from '@/components/trail/TrailFooter'
@@ -5,6 +7,7 @@ import { TrailHeader } from '@/components/trail/TrailHeader'
 import { FutureNodes, TrailNode } from '@/components/trail/TrailNode'
 import { useCurrentDay } from '@/hooks/useCurrentDay'
 import { getKanjiByDay } from '@/lib/kanjiData'
+import { easeGentle, staggerContainer } from '@/lib/motion'
 import { dateLabel, greeting, trailSubtitle } from '@/lib/russian'
 
 const PAST_OPACITIES = [0.7, 0.8, 1]
@@ -32,14 +35,21 @@ export function PathPage() {
     <div className="flex min-h-dvh flex-col">
       <TrailHeader dateLabel={dateLabel()} greeting={greeting()} subtitle={trailSubtitle(currentDay)} />
 
-      <div className="flex flex-1 flex-col items-center px-[34px] pt-[26px]">
+      {/* Nodes and connectors are direct children so the stagger reaches
+          them — variants don't propagate through plain elements. */}
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        animate="visible"
+        className="flex flex-1 flex-col items-center px-[34px] pt-[26px]"
+      >
         {pastDays.map((day, i) => {
           const kanji = getKanjiByDay(day)
           if (!kanji) return null
           const align = i % 2 === 0 ? 'start' : 'center'
           const isLastPast = i === pastDays.length - 1
           return (
-            <div key={day} className="flex w-full flex-col items-center">
+            <Fragment key={day}>
               <TrailNode
                 variant="completed"
                 align={align}
@@ -53,7 +63,7 @@ export function PathPage() {
                 color={isLastPast ? 'neutral' : 'accent2'}
                 height={isLastPast ? 24 : 20}
               />
-            </div>
+            </Fragment>
           )
         })}
 
@@ -72,9 +82,15 @@ export function PathPage() {
         )}
 
         <FutureNodes count={FUTURE_VISIBLE} />
-      </div>
+      </motion.div>
 
-      <TrailFooter />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ...easeGentle, delay: 0.5 }}
+      >
+        <TrailFooter />
+      </motion.div>
     </div>
   )
 }
