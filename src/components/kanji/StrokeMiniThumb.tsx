@@ -18,8 +18,8 @@ export function StrokeMiniThumb({ strokes, thisIndex, instruction, variant }: St
   const writtenColor = variant === 'accent' ? 'var(--color-accent-300)' : 'var(--color-neutral-700)'
 
   return (
-    <div className={cn('flex flex-1 flex-col items-center gap-1.5 rounded-[20px] p-2.5', bg)}>
-      <svg viewBox="0 0 100 100" className="w-full">
+    <div className={cn('flex min-w-0 flex-1 flex-col items-center gap-1.5 rounded-[20px] p-2.5', bg)}>
+      <svg viewBox="0 0 100 100" className="w-full min-w-0">
         <g fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8">
           {strokes.map((stroke, i) => (
             <path
@@ -32,7 +32,7 @@ export function StrokeMiniThumb({ strokes, thisIndex, instruction, variant }: St
           ))}
         </g>
       </svg>
-      <span className={cn('text-[11.5px]', labelColor)}>{instruction}</span>
+      <span className={cn('w-full text-center text-[11.5px] break-words', labelColor)}>{instruction}</span>
     </div>
   )
 }

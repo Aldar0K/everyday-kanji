@@ -1,5 +1,5 @@
-/** New day unlocks at this local hour, not at midnight. */
-export const UNLOCK_HOUR = 6
+/** New day unlocks at this local hour. */
+export const UNLOCK_HOUR = 0
 
 /**
  * Day 1 unlocks at this instant. Chosen so day 12 (山, the kanji the design

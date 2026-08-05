@@ -11,10 +11,10 @@ describe('getCurrentDayNumber', () => {
     expect(getCurrentDayNumber(new Date(APP_START_DATE))).toBe(1)
   })
 
-  it('stays on the previous day at 5:59, rolls to the next at 6:00', () => {
-    // day 2 unlocks 2026-07-26 06:00
-    expect(getCurrentDayNumber(new Date(2026, 6, 26, 5, 59, 59))).toBe(1)
-    expect(getCurrentDayNumber(new Date(2026, 6, 26, 6, 0, 0))).toBe(2)
+  it('stays on the previous day at 23:59, rolls to the next at midnight', () => {
+    // day 2 unlocks 2026-07-26 00:00
+    expect(getCurrentDayNumber(new Date(2026, 6, 25, 23, 59, 59))).toBe(1)
+    expect(getCurrentDayNumber(new Date(2026, 6, 26, 0, 0, 0))).toBe(2)
   })
 
   it('holds steady through the middle of the day', () => {
