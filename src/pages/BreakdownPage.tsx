@@ -1,5 +1,3 @@
-import { motion } from 'motion/react'
-import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import { MotionButton } from '@/components/common/MotionButton'
 import { PageHeader } from '@/components/common/PageHeader'
 import { Tag } from '@/components/common/Tag'
@@ -9,6 +7,8 @@ import { useCurrentDay } from '@/hooks/useCurrentDay'
 import { getKanjiByDay } from '@/lib/kanjiData'
 import { springSoft, staggerContainer, staggerItem } from '@/lib/motion'
 import { pluralizeCherta } from '@/lib/russian'
+import { motion } from 'motion/react'
+import { Navigate, useNavigate, useParams } from 'react-router-dom'
 
 export function BreakdownPage() {
   const { dayNumber } = useParams()
@@ -22,14 +22,14 @@ export function BreakdownPage() {
   }
 
   return (
-    <div className="flex min-h-dvh flex-col gap-5 px-[22px] pt-[66px] pb-10">
+    <div className="flex min-h-dvh flex-col gap-5 px-5.5 pt-16.5 pb-10">
       <PageHeader label={`Урок ${day} · шаг 1 из 3`} onBack={() => navigate(`/day/${day}`)} />
 
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={springSoft}
-        className="flex items-center gap-5 rounded-2xl bg-neutral-100 px-[22px] py-5 shadow-sm"
+        className="flex items-center gap-5 rounded-2xl bg-neutral-100 px-5.5 py-5 shadow-sm"
       >
         <div className="font-kanji text-[82px] leading-none text-text">{kanji.character}</div>
         <div className="flex flex-col gap-1.5">
