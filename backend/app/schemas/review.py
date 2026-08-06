@@ -51,3 +51,20 @@ class StatsOut(BaseModel):
     reviewed_today: int
     published_total: int
     timezone: str
+
+
+class TrailNodeOut(BaseModel):
+    """Узел тропы: знак и его порядковый номер у этого устройства."""
+
+    kanji: KanjiOut
+    position: int
+
+
+class TrailOut(BaseModel):
+    studied_count: int
+    recent: list[TrailNodeOut]
+    today: TrailNodeOut | None
+    today_completed: bool
+    due_count: int
+    published_total: int
+    timezone: str

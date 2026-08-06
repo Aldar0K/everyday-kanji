@@ -1,5 +1,5 @@
 import { useStrokeAnimation } from '@/hooks/useStrokeAnimation'
-import type { Stroke } from '@/lib/types'
+import type { Stroke } from '@/lib/api'
 
 interface StrokeOrderCanvasProps {
   strokes: Stroke[]
@@ -47,7 +47,9 @@ export function StrokeOrderCanvas({ strokes }: StrokeOrderCanvasProps) {
           />
         ))}
       </g>
-      {active && activeIndex < strokes.length && (
+      {/* Точка старта приходит с сервера и может отсутствовать, если её не
+          удалось разобрать из пути — тогда просто не рисуем номер. */}
+      {active?.start && activeIndex < strokes.length && (
         <g>
           <circle cx={active.start.x} cy={active.start.y} r="7" fill="var(--color-accent-700)" />
           <text

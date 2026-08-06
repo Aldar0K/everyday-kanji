@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
 import { AnimatePresence, MotionConfig } from 'motion/react'
 import { PageTransition } from '@/components/common/PageTransition'
 import { NavDirectionContext } from '@/context/NavDirectionContext'
-import { ProgressProvider } from '@/context/ProgressContext'
 import { routeDepth } from '@/lib/routeDepth'
 import { BreakdownPage } from '@/pages/BreakdownPage'
 import { KanjiPage } from '@/pages/KanjiPage'
@@ -37,7 +36,7 @@ function AnimatedRoutes() {
             }
           />
           <Route
-            path="/day/:dayNumber"
+            path="/day/:kanjiId"
             element={
               <PageTransition>
                 <KanjiPage />
@@ -45,7 +44,7 @@ function AnimatedRoutes() {
             }
           />
           <Route
-            path="/day/:dayNumber/breakdown"
+            path="/day/:kanjiId/breakdown"
             element={
               <PageTransition>
                 <BreakdownPage />
@@ -53,7 +52,7 @@ function AnimatedRoutes() {
             }
           />
           <Route
-            path="/day/:dayNumber/strokes"
+            path="/day/:kanjiId/strokes"
             element={
               <PageTransition>
                 <StrokeOrderPage />
@@ -72,13 +71,11 @@ function App() {
     // the OS setting on, keeping only opacity — nothing here conveys meaning
     // through movement alone.
     <MotionConfig reducedMotion="user">
-      <ProgressProvider>
-        <BrowserRouter>
-          <div className="mx-auto min-h-dvh max-w-md overflow-x-hidden bg-bg">
-            <AnimatedRoutes />
-          </div>
-        </BrowserRouter>
-      </ProgressProvider>
+      <BrowserRouter>
+        <div className="mx-auto min-h-dvh max-w-md overflow-x-hidden bg-bg">
+          <AnimatedRoutes />
+        </div>
+      </BrowserRouter>
     </MotionConfig>
   )
 }

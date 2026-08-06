@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils'
-import type { ReadingInfo } from '@/lib/types'
+import type { ReadingInfo } from '@/lib/api'
 
 interface ReadingRowProps {
   label: string

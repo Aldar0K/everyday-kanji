@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils'
-import type { Stroke } from '@/lib/types'
+import type { Stroke } from '@/lib/api'
 
 interface StrokeMiniThumbProps {
   strokes: Stroke[]

@@ -68,8 +68,16 @@ function pluralizeZnak(n: number): string {
   return 'знаков'
 }
 
-export function trailSubtitle(currentDay: number): string {
+export function trailSubtitle(currentDay: number, completed = false): string {
   const behind = currentDay - 1
+
+  // После пройденного урока счёт «позади» включает и сегодняшний знак,
+  // иначе подпись противоречила бы закрашенному кругу на тропе.
+  if (completed) {
+    const done = currentDay
+    return `${capitalize(cardinal(done))} ${pluralizeZnak(done)} позади. Завтра новый.`
+  }
+
   if (behind <= 0) return 'Это твой первый знак.'
   return `${capitalize(cardinal(behind))} ${pluralizeZnak(behind)} позади. Сегодня ${ordinal(currentDay)}.`
 }

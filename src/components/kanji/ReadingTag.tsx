@@ -1,5 +1,5 @@
 import { Tag } from '@/components/common/Tag'
-import type { ReadingInfo } from '@/lib/types'
+import type { ReadingInfo } from '@/lib/api'
 
 interface ReadingTagProps {
   reading: ReadingInfo

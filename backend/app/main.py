@@ -6,7 +6,7 @@ from fastapi import FastAPI
 from app import redis_client
 from app.config import settings
 from app.middleware import DeviceMiddleware, RateLimitMiddleware
-from app.routers import health, kanji, lesson, reviews, stats
+from app.routers import health, kanji, lesson, reviews, stats, trail
 
 logging.basicConfig(
     level=logging.INFO,
@@ -46,4 +46,5 @@ app.include_router(health.router, prefix="/api")
 app.include_router(kanji.router, prefix="/api")
 app.include_router(reviews.router, prefix="/api")
 app.include_router(lesson.router, prefix="/api")
+app.include_router(trail.router, prefix="/api")
 app.include_router(stats.router, prefix="/api")

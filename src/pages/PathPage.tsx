@@ -1,67 +1,70 @@
+import { Fragment } from 'react'
+import { motion } from 'motion/react'
+import { useNavigate } from 'react-router-dom'
+import { ScreenError, ScreenLoading } from '@/components/common/ScreenState'
 import { TrailConnector } from '@/components/trail/TrailConnector'
 import { TrailFooter } from '@/components/trail/TrailFooter'
 import { TrailHeader } from '@/components/trail/TrailHeader'
 import { FutureNodes, TrailNode } from '@/components/trail/TrailNode'
-import { useCurrentDay } from '@/hooks/useCurrentDay'
-import { getKanjiByDay } from '@/lib/kanjiData'
+import { useAsync } from '@/hooks/useAsync'
+import { api } from '@/lib/api'
 import { easeGentle, staggerContainer } from '@/lib/motion'
 import { dateLabel, greeting, trailSubtitle } from '@/lib/russian'
-import { motion } from 'motion/react'
-import { Fragment } from 'react'
-import { useNavigate } from 'react-router-dom'
 
 const PAST_OPACITIES = [0.7, 0.8, 1]
-const MAX_PAST_VISIBLE = 3
 const FUTURE_VISIBLE = 3
 
 export function PathPage() {
   const navigate = useNavigate()
-  const currentDay = useCurrentDay()
+  const { data, error, loading, reload } = useAsync(() => api.getTrail())
 
-  if (currentDay < 1) {
-    return (
-      <div className="flex min-h-dvh items-center justify-center px-6 text-center text-neutral-600">
-        Первый знак откроется скоро.
-      </div>
-    )
+  if (loading) return <ScreenLoading />
+  if (error || !data) {
+    return <ScreenError message={error ?? 'Не удалось загрузить тропу'} onRetry={reload} />
   }
 
-  const pastCount = Math.min(MAX_PAST_VISIBLE, currentDay - 1)
-  const pastDays = Array.from({ length: pastCount }, (_, i) => currentDay - pastCount + i)
-  const opacities = PAST_OPACITIES.slice(PAST_OPACITIES.length - pastCount)
-  const today = getKanjiByDay(currentDay)
+  const { recent, today, studied_count: studiedCount } = data
+  // Прозрачность нарастает по мере приближения к сегодняшнему дню.
+  const opacities = PAST_OPACITIES.slice(PAST_OPACITIES.length - recent.length)
 
   return (
     <div className="flex min-h-dvh flex-col">
-      <TrailHeader dateLabel={dateLabel()} greeting={greeting()} subtitle={trailSubtitle(currentDay)} />
+      <TrailHeader
+        dateLabel={dateLabel()}
+        greeting={greeting()}
+        subtitle={trailSubtitle(
+          today ? today.position : studiedCount + 1,
+          data.today_completed,
+        )}
+      />
 
-      {/* Nodes and connectors are direct children so the stagger reaches
-          them — variants don't propagate through plain elements. */}
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
         className="flex flex-1 flex-col items-center px-8.5 pt-6.5"
       >
-        {pastDays.map((day, i) => {
-          const kanji = getKanjiByDay(day)
-          if (!kanji) return null
+        {recent.map((node, i) => {
           const align = i % 2 === 0 ? 'start' : 'center'
-          const isLastPast = i === pastDays.length - 1
+          const isLast = i === recent.length - 1
           return (
-            <Fragment key={day}>
+            <Fragment key={node.kanji.id}>
               <TrailNode
                 variant="completed"
                 align={align}
-                character={kanji.character}
-                label={`день ${day} · ${kanji.meaning}`}
-                opacity={opacities[i]}
-                onClick={() => navigate(`/day/${day}`)}
+                character={node.kanji.character}
+                label={`день ${node.position} · ${node.kanji.meaning ?? ''}`}
+                opacity={opacities[i] ?? 1}
+                onClick={() =>
+                  navigate(`/day/${node.kanji.id}`, {
+                    state: { position: node.position },
+                  })
+                }
               />
               <TrailConnector
                 align={align}
-                color={isLastPast ? 'neutral' : 'accent2'}
-                height={isLastPast ? 24 : 20}
+                color={isLast ? 'neutral' : 'accent2'}
+                height={isLast ? 24 : 20}
               />
             </Fragment>
           )
@@ -72,10 +75,18 @@ export function PathPage() {
             <TrailNode
               variant="today"
               align="center"
-              character={today.character}
-              label={today.meaning}
-              sublabel="нажми, чтобы открыть · 4 минуты"
-              onClick={() => navigate(`/day/${currentDay}`)}
+              character={today.kanji.character}
+              label={today.kanji.meaning ?? ''}
+              sublabel={
+                data.today_completed
+                  ? 'урок пройден · можно повторить'
+                  : 'нажми, чтобы открыть · 4 минуты'
+              }
+              onClick={() =>
+                navigate(`/day/${today.kanji.id}`, {
+                  state: { position: today.position },
+                })
+              }
             />
             <TrailConnector align="center" color="neutral" height={24} />
           </>

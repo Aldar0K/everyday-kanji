@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils'
-import type { ExampleWord } from '@/lib/types'
+import type { ExampleWord } from '@/lib/api'
 
 interface ExampleWordRowProps {
   word: ExampleWord

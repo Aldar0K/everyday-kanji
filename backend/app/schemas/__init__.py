@@ -10,6 +10,8 @@ from app.schemas.review import (
     ReviewOut,
     ReviewSubmitIn,
     StatsOut,
+    TrailNodeOut,
+    TrailOut,
 )
 
 __all__ = [
@@ -22,4 +24,6 @@ __all__ = [
     "ReviewSubmitIn",
     "StatsOut",
     "StrokeOut",
+    "TrailNodeOut",
+    "TrailOut",
 ]
