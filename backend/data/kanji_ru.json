@@ -6,9 +6,24 @@
     "on_reading_romaji": "ichi",
     "writing_note": "Одна черта. Веди слева направо, ровно и спокойно.",
     "example_words": [
-      { "word": "一つ", "kana": "ひとつ", "romaji": "hitotsu", "translation": "один (предмет)" },
-      { "word": "一月", "kana": "いちがつ", "romaji": "ichigatsu", "translation": "январь" },
-      { "word": "一人", "kana": "ひとり", "romaji": "hitori", "translation": "один человек" }
+      {
+        "word": "一つ",
+        "kana": "ひとつ",
+        "romaji": "hitotsu",
+        "translation": "один (предмет)"
+      },
+      {
+        "word": "一月",
+        "kana": "いちがつ",
+        "romaji": "ichigatsu",
+        "translation": "январь"
+      },
+      {
+        "word": "一人",
+        "kana": "ひとり",
+        "romaji": "hitori",
+        "translation": "один человек"
+      }
     ]
   },
   {
@@ -18,9 +33,24 @@
     "on_reading_romaji": "ni",
     "writing_note": "Две черты. Сначала верхняя, потом нижняя — обе слева направо.",
     "example_words": [
-      { "word": "二つ", "kana": "ふたつ", "romaji": "futatsu", "translation": "два (предмета)" },
-      { "word": "二月", "kana": "にがつ", "romaji": "nigatsu", "translation": "февраль" },
-      { "word": "二人", "kana": "ふたり", "romaji": "futari", "translation": "два человека" }
+      {
+        "word": "二つ",
+        "kana": "ふたつ",
+        "romaji": "futatsu",
+        "translation": "два (предмета)"
+      },
+      {
+        "word": "二月",
+        "kana": "にがつ",
+        "romaji": "nigatsu",
+        "translation": "февраль"
+      },
+      {
+        "word": "二人",
+        "kana": "ふたり",
+        "romaji": "futari",
+        "translation": "два человека"
+      }
     ]
   },
   {
@@ -30,9 +60,24 @@
     "on_reading_romaji": "san",
     "writing_note": "Три черты подряд, сверху вниз: верхняя, средняя, нижняя. Каждая — слева направо.",
     "example_words": [
-      { "word": "三つ", "kana": "みっつ", "romaji": "mittsu", "translation": "три (предмета)" },
-      { "word": "三月", "kana": "さんがつ", "romaji": "sangatsu", "translation": "март" },
-      { "word": "三人", "kana": "さんにん", "romaji": "sannin", "translation": "три человека" }
+      {
+        "word": "三つ",
+        "kana": "みっつ",
+        "romaji": "mittsu",
+        "translation": "три (предмета)"
+      },
+      {
+        "word": "三月",
+        "kana": "さんがつ",
+        "romaji": "sangatsu",
+        "translation": "март"
+      },
+      {
+        "word": "三人",
+        "kana": "さんにん",
+        "romaji": "sannin",
+        "translation": "три человека"
+      }
     ]
   },
   {
@@ -42,9 +87,24 @@
     "on_reading_romaji": "juu",
     "writing_note": "Две черты. Сначала горизонтальная слева направо, потом вертикальная сверху вниз через середину.",
     "example_words": [
-      { "word": "十日", "kana": "とおか", "romaji": "tooka", "translation": "десятое число" },
-      { "word": "十月", "kana": "じゅうがつ", "romaji": "juugatsu", "translation": "октябрь" },
-      { "word": "五十", "kana": "ごじゅう", "romaji": "gojuu", "translation": "пятьдесят" }
+      {
+        "word": "十日",
+        "kana": "とおか",
+        "romaji": "tooka",
+        "translation": "десятое число"
+      },
+      {
+        "word": "十月",
+        "kana": "じゅうがつ",
+        "romaji": "juugatsu",
+        "translation": "октябрь"
+      },
+      {
+        "word": "五十",
+        "kana": "ごじゅう",
+        "romaji": "gojuu",
+        "translation": "пятьдесят"
+      }
     ]
   },
   {
@@ -54,9 +114,24 @@
     "on_reading_romaji": "jin",
     "writing_note": "Две черты, как ноги идущего человека. Сначала длинная влево-вниз, потом короче — вправо-вниз.",
     "example_words": [
-      { "word": "日本人", "kana": "にほんじん", "romaji": "nihonjin", "translation": "японец" },
-      { "word": "外人", "kana": "がいじん", "romaji": "gaijin", "translation": "иностранец" },
-      { "word": "大人", "kana": "おとな", "romaji": "otona", "translation": "взрослый" }
+      {
+        "word": "日本人",
+        "kana": "にほんじん",
+        "romaji": "nihonjin",
+        "translation": "японец"
+      },
+      {
+        "word": "外人",
+        "kana": "がいじん",
+        "romaji": "gaijin",
+        "translation": "иностранец"
+      },
+      {
+        "word": "大人",
+        "kana": "おとな",
+        "romaji": "otona",
+        "translation": "взрослый"
+      }
     ]
   },
   {
@@ -66,9 +141,24 @@
     "on_reading_romaji": "dai",
     "writing_note": "Три черты. Сначала горизонтальная, потом от центра — влево-вниз и вправо-вниз, как раскинутые руки.",
     "example_words": [
-      { "word": "大きい", "kana": "おおきい", "romaji": "ookii", "translation": "большой" },
-      { "word": "大学", "kana": "だいがく", "romaji": "daigaku", "translation": "университет" },
-      { "word": "大好き", "kana": "だいすき", "romaji": "daisuki", "translation": "очень нравится" }
+      {
+        "word": "大きい",
+        "kana": "おおきい",
+        "romaji": "ookii",
+        "translation": "большой"
+      },
+      {
+        "word": "大学",
+        "kana": "だいがく",
+        "romaji": "daigaku",
+        "translation": "университет"
+      },
+      {
+        "word": "大好き",
+        "kana": "だいすき",
+        "romaji": "daisuki",
+        "translation": "очень нравится"
+      }
     ]
   },
   {
@@ -78,9 +168,24 @@
     "on_reading_romaji": "moku",
     "writing_note": "Четыре черты: горизонтальная, вертикальная через неё, затем две черты-ветви вниз — влево и вправо.",
     "example_words": [
-      { "word": "木曜日", "kana": "もくようび", "romaji": "mokuyoubi", "translation": "четверг" },
-      { "word": "木村", "kana": "きむら", "romaji": "kimura", "translation": "Кимура (фамилия)" },
-      { "word": "大木", "kana": "たいぼく", "romaji": "taiboku", "translation": "большое дерево" }
+      {
+        "word": "木曜日",
+        "kana": "もくようび",
+        "romaji": "mokuyoubi",
+        "translation": "четверг"
+      },
+      {
+        "word": "木村",
+        "kana": "きむら",
+        "romaji": "kimura",
+        "translation": "Кимура (фамилия)"
+      },
+      {
+        "word": "大木",
+        "kana": "たいぼく",
+        "romaji": "taiboku",
+        "translation": "большое дерево"
+      }
     ]
   },
   {
@@ -90,9 +195,24 @@
     "on_reading_romaji": "sen",
     "writing_note": "Три вертикальные черты одна за другой, слева направо. Как берега и течение реки.",
     "example_words": [
-      { "word": "川", "kana": "かわ", "romaji": "kawa", "translation": "река" },
-      { "word": "小川", "kana": "おがわ", "romaji": "ogawa", "translation": "ручей" },
-      { "word": "河川", "kana": "かせん", "romaji": "kasen", "translation": "реки (обобщённо)" }
+      {
+        "word": "川",
+        "kana": "かわ",
+        "romaji": "kawa",
+        "translation": "река"
+      },
+      {
+        "word": "小川",
+        "kana": "おがわ",
+        "romaji": "ogawa",
+        "translation": "ручей"
+      },
+      {
+        "word": "河川",
+        "kana": "かせん",
+        "romaji": "kasen",
+        "translation": "реки (обобщённо)"
+      }
     ]
   },
   {
@@ -102,9 +222,24 @@
     "on_reading_romaji": "ka",
     "writing_note": "Четыре черты. Сначала две короткие вверху, потом две длинные — влево-вниз и вправо-вниз.",
     "example_words": [
-      { "word": "火曜日", "kana": "かようび", "romaji": "kayoubi", "translation": "вторник" },
-      { "word": "花火", "kana": "はなび", "romaji": "hanabi", "translation": "фейерверк" },
-      { "word": "火山", "kana": "かざん", "romaji": "kazan", "translation": "вулкан" }
+      {
+        "word": "火曜日",
+        "kana": "かようび",
+        "romaji": "kayoubi",
+        "translation": "вторник"
+      },
+      {
+        "word": "花火",
+        "kana": "はなび",
+        "romaji": "hanabi",
+        "translation": "фейерверк"
+      },
+      {
+        "word": "火山",
+        "kana": "かざん",
+        "romaji": "kazan",
+        "translation": "вулкан"
+      }
     ]
   },
   {
@@ -114,9 +249,24 @@
     "on_reading_romaji": "nichi",
     "writing_note": "Четыре черты: левая сторона, затем верх и правая сторона одной чертой, потом средняя и нижняя линии.",
     "example_words": [
-      { "word": "日曜日", "kana": "にちようび", "romaji": "nichiyoubi", "translation": "воскресенье" },
-      { "word": "毎日", "kana": "まいにち", "romaji": "mainichi", "translation": "каждый день" },
-      { "word": "日本", "kana": "にほん", "romaji": "nihon", "translation": "Япония" }
+      {
+        "word": "日曜日",
+        "kana": "にちようび",
+        "romaji": "nichiyoubi",
+        "translation": "воскресенье"
+      },
+      {
+        "word": "毎日",
+        "kana": "まいにち",
+        "romaji": "mainichi",
+        "translation": "каждый день"
+      },
+      {
+        "word": "日本",
+        "kana": "にほん",
+        "romaji": "nihon",
+        "translation": "Япония"
+      }
     ]
   },
   {
@@ -126,9 +276,24 @@
     "on_reading_romaji": "getsu",
     "writing_note": "Четыре черты: левая сторона, затем верх, право и низ одной чертой, потом две черты внутри.",
     "example_words": [
-      { "word": "月曜日", "kana": "げつようび", "romaji": "getsuyoubi", "translation": "понедельник" },
-      { "word": "今月", "kana": "こんげつ", "romaji": "kongetsu", "translation": "этот месяц" },
-      { "word": "一月", "kana": "いちがつ", "romaji": "ichigatsu", "translation": "январь" }
+      {
+        "word": "月曜日",
+        "kana": "げつようび",
+        "romaji": "getsuyoubi",
+        "translation": "понедельник"
+      },
+      {
+        "word": "今月",
+        "kana": "こんげつ",
+        "romaji": "kongetsu",
+        "translation": "этот месяц"
+      },
+      {
+        "word": "一月",
+        "kana": "いちがつ",
+        "romaji": "ichigatsu",
+        "translation": "январь"
+      }
     ]
   },
   {
@@ -138,9 +303,24 @@
     "on_reading_romaji": "san",
     "writing_note": "Три черты. Сначала середина, потом левая стена с дном, в конце — правая. Обведи пальцем по серому.",
     "example_words": [
-      { "word": "火山", "kana": "かざん", "romaji": "kazan", "translation": "вулкан" },
-      { "word": "山道", "kana": "やまみち", "romaji": "yamamichi", "translation": "горная тропа" },
-      { "word": "富士山", "kana": "ふじさん", "romaji": "Fuji-san", "translation": "гора Фудзи" }
+      {
+        "word": "火山",
+        "kana": "かざん",
+        "romaji": "kazan",
+        "translation": "вулкан"
+      },
+      {
+        "word": "山道",
+        "kana": "やまみち",
+        "romaji": "yamamichi",
+        "translation": "горная тропа"
+      },
+      {
+        "word": "富士山",
+        "kana": "ふじさん",
+        "romaji": "Fuji-san",
+        "translation": "гора Фудзи"
+      }
     ]
   },
   {
@@ -150,9 +330,24 @@
     "on_reading_romaji": "jo",
     "writing_note": "Три черты. Сначала дуга сверху вниз с изгибом вправо, потом дуга сверху-справа вниз-влево, в конце — горизонтальная черта.",
     "example_words": [
-      { "word": "女の子", "kana": "おんなのこ", "romaji": "onna no ko", "translation": "девочка" },
-      { "word": "女性", "kana": "じょせい", "romaji": "josei", "translation": "женщина (офиц.)" },
-      { "word": "彼女", "kana": "かのじょ", "romaji": "kanojo", "translation": "она, девушка" }
+      {
+        "word": "女の子",
+        "kana": "おんなのこ",
+        "romaji": "onna no ko",
+        "translation": "девочка"
+      },
+      {
+        "word": "女性",
+        "kana": "じょせい",
+        "romaji": "josei",
+        "translation": "женщина (офиц.)"
+      },
+      {
+        "word": "彼女",
+        "kana": "かのじょ",
+        "romaji": "kanojo",
+        "translation": "она, девушка"
+      }
     ]
   },
   {
@@ -162,9 +357,24 @@
     "on_reading_romaji": "shi",
     "writing_note": "Три черты. Сначала крючок сверху, потом вертикальная черта с крючком внизу, в конце — горизонтальная черта.",
     "example_words": [
-      { "word": "子供", "kana": "こども", "romaji": "kodomo", "translation": "ребёнок, дети" },
-      { "word": "男の子", "kana": "おとこのこ", "romaji": "otoko no ko", "translation": "мальчик" },
-      { "word": "息子", "kana": "むすこ", "romaji": "musuko", "translation": "сын" }
+      {
+        "word": "子供",
+        "kana": "こども",
+        "romaji": "kodomo",
+        "translation": "ребёнок, дети"
+      },
+      {
+        "word": "男の子",
+        "kana": "おとこのこ",
+        "romaji": "otoko no ko",
+        "translation": "мальчик"
+      },
+      {
+        "word": "息子",
+        "kana": "むすこ",
+        "romaji": "musuko",
+        "translation": "сын"
+      }
     ]
   },
   {
@@ -174,9 +384,24 @@
     "on_reading_romaji": "sui",
     "writing_note": "Четыре черты. Сначала вертикальная черта с крючком по центру, потом короткие черты слева и справа, в конце — длинная черта вниз-вправо.",
     "example_words": [
-      { "word": "水曜日", "kana": "すいようび", "romaji": "suiyoubi", "translation": "среда" },
-      { "word": "水泳", "kana": "すいえい", "romaji": "suiei", "translation": "плавание" },
-      { "word": "お水", "kana": "おみず", "romaji": "o-mizu", "translation": "вода (вежливо)" }
+      {
+        "word": "水曜日",
+        "kana": "すいようび",
+        "romaji": "suiyoubi",
+        "translation": "среда"
+      },
+      {
+        "word": "水泳",
+        "kana": "すいえい",
+        "romaji": "suiei",
+        "translation": "плавание"
+      },
+      {
+        "word": "お水",
+        "kana": "おみず",
+        "romaji": "o-mizu",
+        "translation": "вода (вежливо)"
+      }
     ]
   },
   {
@@ -186,8 +411,18 @@
     "on_reading_romaji": "do",
     "writing_note": "Три черты. Верхняя горизонтальная, потом вертикальная через середину, в конце — широкая нижняя черта.",
     "example_words": [
-      { "word": "土曜日", "kana": "どようび", "romaji": "doyoubi", "translation": "суббота" },
-      { "word": "土地", "kana": "とち", "romaji": "tochi", "translation": "земля, участок" }
+      {
+        "word": "土曜日",
+        "kana": "どようび",
+        "romaji": "doyoubi",
+        "translation": "суббота"
+      },
+      {
+        "word": "土地",
+        "kana": "とち",
+        "romaji": "tochi",
+        "translation": "земля, участок"
+      }
     ]
   },
   {
@@ -197,9 +432,24 @@
     "on_reading_romaji": "kin",
     "writing_note": "Восемь черт. Сначала «крыша» из двух скатов, потом два горизонтальных штриха и вертикаль по центру, затем два коротких штриха по бокам, и в конце — черта-основание внизу.",
     "example_words": [
-      { "word": "お金", "kana": "おかね", "romaji": "o-kane", "translation": "деньги" },
-      { "word": "金曜日", "kana": "きんようび", "romaji": "kin'youbi", "translation": "пятница" },
-      { "word": "金魚", "kana": "きんぎょ", "romaji": "kingyo", "translation": "золотая рыбка" }
+      {
+        "word": "お金",
+        "kana": "おかね",
+        "romaji": "o-kane",
+        "translation": "деньги"
+      },
+      {
+        "word": "金曜日",
+        "kana": "きんようび",
+        "romaji": "kin'youbi",
+        "translation": "пятница"
+      },
+      {
+        "word": "金魚",
+        "kana": "きんぎょ",
+        "romaji": "kingyo",
+        "translation": "золотая рыбка"
+      }
     ]
   },
   {
@@ -209,9 +459,24 @@
     "on_reading_romaji": "kou",
     "writing_note": "Три черты. Левая сторона, затем верх и правая сторона одной чертой, в конце — нижняя черта, закрывает квадрат.",
     "example_words": [
-      { "word": "入口", "kana": "いりぐち", "romaji": "iriguchi", "translation": "вход" },
-      { "word": "出口", "kana": "でぐち", "romaji": "deguchi", "translation": "выход" },
-      { "word": "人口", "kana": "じんこう", "romaji": "jinkou", "translation": "население" }
+      {
+        "word": "入口",
+        "kana": "いりぐち",
+        "romaji": "iriguchi",
+        "translation": "вход"
+      },
+      {
+        "word": "出口",
+        "kana": "でぐち",
+        "romaji": "deguchi",
+        "translation": "выход"
+      },
+      {
+        "word": "人口",
+        "kana": "じんこう",
+        "romaji": "jinkou",
+        "translation": "население"
+      }
     ]
   },
   {
@@ -221,9 +486,24 @@
     "on_reading_romaji": "chuu",
     "writing_note": "Четыре черты. Сначала квадрат — левая сторона, верх с правой стороной одной чертой, нижняя черта, — а в конце вертикальная черта пронзает его насквозь.",
     "example_words": [
-      { "word": "中国", "kana": "ちゅうごく", "romaji": "chuugoku", "translation": "Китай" },
-      { "word": "中心", "kana": "ちゅうしん", "romaji": "chuushin", "translation": "центр" },
-      { "word": "中学校", "kana": "ちゅうがっこう", "romaji": "chuugakkou", "translation": "средняя школа" }
+      {
+        "word": "中国",
+        "kana": "ちゅうごく",
+        "romaji": "chuugoku",
+        "translation": "Китай"
+      },
+      {
+        "word": "中心",
+        "kana": "ちゅうしん",
+        "romaji": "chuushin",
+        "translation": "центр"
+      },
+      {
+        "word": "中学校",
+        "kana": "ちゅうがっこう",
+        "romaji": "chuugakkou",
+        "translation": "средняя школа"
+      }
     ]
   },
   {
@@ -233,8 +513,1611 @@
     "on_reading_romaji": "jou",
     "writing_note": "Три черты. Вертикальная черта, потом короткая горизонтальная справа, в конце — длинная черта в основании.",
     "example_words": [
-      { "word": "上手", "kana": "じょうず", "romaji": "jouzu", "translation": "умелый, искусный" },
-      { "word": "机の上", "kana": "つくえのうえ", "romaji": "tsukue no ue", "translation": "на столе" }
+      {
+        "word": "上手",
+        "kana": "じょうず",
+        "romaji": "jouzu",
+        "translation": "умелый, искусный"
+      },
+      {
+        "word": "机の上",
+        "kana": "つくえのうえ",
+        "romaji": "tsukue no ue",
+        "translation": "на столе"
+      }
+    ]
+  },
+  {
+    "character": "年",
+    "meaning": "год",
+    "kun_reading_romaji": "toshi",
+    "on_reading_romaji": "nen",
+    "writing_note": "Шесть черт. Сначала верхняя часть, затем длинная вертикаль вниз и горизонтальные черты поперёк неё.",
+    "example_words": [
+      {
+        "word": "今年",
+        "kana": "ことし",
+        "romaji": "kotoshi",
+        "translation": "этот год"
+      },
+      {
+        "word": "去年",
+        "kana": "きょねん",
+        "romaji": "kyonen",
+        "translation": "прошлый год"
+      },
+      {
+        "word": "毎年",
+        "kana": "まいとし",
+        "romaji": "maitoshi",
+        "translation": "каждый год"
+      }
+    ]
+  },
+  {
+    "character": "出",
+    "meaning": "выходить",
+    "kun_reading_romaji": "de(ru)",
+    "on_reading_romaji": "shutsu",
+    "writing_note": "Пять черт. Пишется как две «горки» одна над другой: сначала верхняя, потом нижняя, шире.",
+    "example_words": [
+      {
+        "word": "出る",
+        "kana": "でる",
+        "romaji": "deru",
+        "translation": "выходить"
+      },
+      {
+        "word": "出口",
+        "kana": "でぐち",
+        "romaji": "deguchi",
+        "translation": "выход"
+      },
+      {
+        "word": "出発",
+        "kana": "しゅっぱつ",
+        "romaji": "shuppatsu",
+        "translation": "отправление"
+      }
+    ]
+  },
+  {
+    "character": "本",
+    "meaning": "книга; основа",
+    "kun_reading_romaji": "moto",
+    "on_reading_romaji": "hon",
+    "writing_note": "Пять черт. Это знак «дерево» 木, а в конце добавляется короткая черта у корня — отсюда значение «основа».",
+    "example_words": [
+      {
+        "word": "本",
+        "kana": "ほん",
+        "romaji": "hon",
+        "translation": "книга"
+      },
+      {
+        "word": "日本",
+        "kana": "にほん",
+        "romaji": "nihon",
+        "translation": "Япония"
+      },
+      {
+        "word": "本当",
+        "kana": "ほんとう",
+        "romaji": "hontou",
+        "translation": "правда"
+      }
+    ]
+  },
+  {
+    "character": "見",
+    "meaning": "смотреть, видеть",
+    "kun_reading_romaji": "mi(ru)",
+    "on_reading_romaji": "ken",
+    "writing_note": "Семь черт. Сверху «глаз» 目, снизу — две ноги: человек, который смотрит.",
+    "example_words": [
+      {
+        "word": "見る",
+        "kana": "みる",
+        "romaji": "miru",
+        "translation": "смотреть"
+      },
+      {
+        "word": "花見",
+        "kana": "はなみ",
+        "romaji": "hanami",
+        "translation": "любование цветами"
+      },
+      {
+        "word": "意見",
+        "kana": "いけん",
+        "romaji": "iken",
+        "translation": "мнение"
+      }
+    ]
+  },
+  {
+    "character": "国",
+    "meaning": "страна",
+    "kun_reading_romaji": "kuni",
+    "on_reading_romaji": "koku",
+    "writing_note": "Восемь черт. Сначала три стороны ограды, потом всё, что внутри, и только в самом конце — нижняя черта, закрывающая рамку.",
+    "example_words": [
+      {
+        "word": "国",
+        "kana": "くに",
+        "romaji": "kuni",
+        "translation": "страна"
+      },
+      {
+        "word": "外国",
+        "kana": "がいこく",
+        "romaji": "gaikoku",
+        "translation": "заграница"
+      },
+      {
+        "word": "中国",
+        "kana": "ちゅうごく",
+        "romaji": "chuugoku",
+        "translation": "Китай"
+      }
+    ]
+  },
+  {
+    "character": "分",
+    "meaning": "часть; минута; понимать",
+    "kun_reading_romaji": "wa(keru)",
+    "on_reading_romaji": "bun",
+    "writing_note": "Четыре черты. Сверху «восемь» 八 — знак разделения, снизу «меч» 刀: что-то разделяют надвое.",
+    "example_words": [
+      {
+        "word": "分かる",
+        "kana": "わかる",
+        "romaji": "wakaru",
+        "translation": "понимать"
+      },
+      {
+        "word": "半分",
+        "kana": "はんぶん",
+        "romaji": "hanbun",
+        "translation": "половина"
+      },
+      {
+        "word": "十分",
+        "kana": "じゅっぷん",
+        "romaji": "juppun",
+        "translation": "десять минут"
+      }
+    ]
+  },
+  {
+    "character": "生",
+    "meaning": "жизнь; рождаться",
+    "kun_reading_romaji": "i(kiru)",
+    "on_reading_romaji": "sei",
+    "writing_note": "Пять черт. Росток, пробивающийся из земли: сначала верхние черты, потом длинная нижняя.",
+    "example_words": [
+      {
+        "word": "学生",
+        "kana": "がくせい",
+        "romaji": "gakusei",
+        "translation": "студент"
+      },
+      {
+        "word": "先生",
+        "kana": "せんせい",
+        "romaji": "sensei",
+        "translation": "учитель"
+      },
+      {
+        "word": "生まれる",
+        "kana": "うまれる",
+        "romaji": "umareru",
+        "translation": "рождаться"
+      }
+    ]
+  },
+  {
+    "character": "行",
+    "meaning": "идти",
+    "kun_reading_romaji": "i(ku)",
+    "on_reading_romaji": "kou",
+    "writing_note": "Шесть черт. Сначала левая часть целиком, потом правая — общее правило для знаков, разделённых надвое.",
+    "example_words": [
+      {
+        "word": "行く",
+        "kana": "いく",
+        "romaji": "iku",
+        "translation": "идти"
+      },
+      {
+        "word": "銀行",
+        "kana": "ぎんこう",
+        "romaji": "ginkou",
+        "translation": "банк"
+      },
+      {
+        "word": "旅行",
+        "kana": "りょこう",
+        "romaji": "ryokou",
+        "translation": "путешествие"
+      }
+    ]
+  },
+  {
+    "character": "間",
+    "meaning": "промежуток, между",
+    "kun_reading_romaji": "aida",
+    "on_reading_romaji": "kan",
+    "writing_note": "Двенадцать черт. Сначала «ворота» 門 целиком, потом «солнце» 日 внутри них — солнце в просвете ворот.",
+    "example_words": [
+      {
+        "word": "時間",
+        "kana": "じかん",
+        "romaji": "jikan",
+        "translation": "время"
+      },
+      {
+        "word": "人間",
+        "kana": "にんげん",
+        "romaji": "ningen",
+        "translation": "человек"
+      },
+      {
+        "word": "間",
+        "kana": "あいだ",
+        "romaji": "aida",
+        "translation": "промежуток"
+      }
+    ]
+  },
+  {
+    "character": "時",
+    "meaning": "время, час",
+    "kun_reading_romaji": "toki",
+    "on_reading_romaji": "ji",
+    "writing_note": "Десять черт. Слева «солнце» 日, справа «храм» 寺. Сначала левая часть, потом правая.",
+    "example_words": [
+      {
+        "word": "時間",
+        "kana": "じかん",
+        "romaji": "jikan",
+        "translation": "время"
+      },
+      {
+        "word": "何時",
+        "kana": "なんじ",
+        "romaji": "nanji",
+        "translation": "который час"
+      },
+      {
+        "word": "時々",
+        "kana": "ときどき",
+        "romaji": "tokidoki",
+        "translation": "иногда"
+      }
+    ]
+  },
+  {
+    "character": "気",
+    "meaning": "дух, настроение",
+    "kun_reading_romaji": "iki",
+    "on_reading_romaji": "ki",
+    "writing_note": "Шесть черт. Сначала «крышка» сверху и слева, потом то, что внутри неё.",
+    "example_words": [
+      {
+        "word": "元気",
+        "kana": "げんき",
+        "romaji": "genki",
+        "translation": "бодрость, здоровье"
+      },
+      {
+        "word": "天気",
+        "kana": "てんき",
+        "romaji": "tenki",
+        "translation": "погода"
+      },
+      {
+        "word": "病気",
+        "kana": "びょうき",
+        "romaji": "byouki",
+        "translation": "болезнь"
+      }
+    ]
+  },
+  {
+    "character": "前",
+    "meaning": "перед",
+    "kun_reading_romaji": "mae",
+    "on_reading_romaji": "zen",
+    "writing_note": "Девять черт. Сверху две короткие черты, ниже — остальная часть знака.",
+    "example_words": [
+      {
+        "word": "前",
+        "kana": "まえ",
+        "romaji": "mae",
+        "translation": "перед, впереди"
+      },
+      {
+        "word": "名前",
+        "kana": "なまえ",
+        "romaji": "namae",
+        "translation": "имя"
+      },
+      {
+        "word": "午前",
+        "kana": "ごぜん",
+        "romaji": "gozen",
+        "translation": "до полудня"
+      }
+    ]
+  },
+  {
+    "character": "入",
+    "meaning": "входить",
+    "kun_reading_romaji": "i(ru)",
+    "on_reading_romaji": "nyuu",
+    "writing_note": "Две черты. Похож на 人, но здесь первой пишется короткая левая черта, а длинная правая — второй.",
+    "example_words": [
+      {
+        "word": "入る",
+        "kana": "はいる",
+        "romaji": "hairu",
+        "translation": "входить"
+      },
+      {
+        "word": "入口",
+        "kana": "いりぐち",
+        "romaji": "iriguchi",
+        "translation": "вход"
+      },
+      {
+        "word": "入学",
+        "kana": "にゅうがく",
+        "romaji": "nyuugaku",
+        "translation": "поступление в школу"
+      }
+    ]
+  },
+  {
+    "character": "小",
+    "meaning": "маленький",
+    "kun_reading_romaji": "chii(sai)",
+    "on_reading_romaji": "shou",
+    "writing_note": "Три черты. Сначала вертикаль с крючком по центру, потом точки слева и справа.",
+    "example_words": [
+      {
+        "word": "小さい",
+        "kana": "ちいさい",
+        "romaji": "chiisai",
+        "translation": "маленький"
+      },
+      {
+        "word": "小学校",
+        "kana": "しょうがっこう",
+        "romaji": "shougakkou",
+        "translation": "начальная школа"
+      },
+      {
+        "word": "小川",
+        "kana": "おがわ",
+        "romaji": "ogawa",
+        "translation": "ручей"
+      }
+    ]
+  },
+  {
+    "character": "後",
+    "meaning": "позади, после",
+    "kun_reading_romaji": "nochi",
+    "on_reading_romaji": "go",
+    "writing_note": "Девять черт. Сначала левая часть — «идти», потом правая.",
+    "example_words": [
+      {
+        "word": "午後",
+        "kana": "ごご",
+        "romaji": "gogo",
+        "translation": "после полудня"
+      },
+      {
+        "word": "後ろ",
+        "kana": "うしろ",
+        "romaji": "ushiro",
+        "translation": "сзади"
+      },
+      {
+        "word": "最後",
+        "kana": "さいご",
+        "romaji": "saigo",
+        "translation": "последний"
+      }
+    ]
+  },
+  {
+    "character": "長",
+    "meaning": "длинный; начальник",
+    "kun_reading_romaji": "naga(i)",
+    "on_reading_romaji": "chou",
+    "writing_note": "Восемь черт. Сначала верхние горизонтальные черты и длинная вертикаль, потом нижняя часть.",
+    "example_words": [
+      {
+        "word": "長い",
+        "kana": "ながい",
+        "romaji": "nagai",
+        "translation": "длинный"
+      },
+      {
+        "word": "社長",
+        "kana": "しゃちょう",
+        "romaji": "shachou",
+        "translation": "директор фирмы"
+      },
+      {
+        "word": "校長",
+        "kana": "こうちょう",
+        "romaji": "kouchou",
+        "translation": "директор школы"
+      }
+    ]
+  },
+  {
+    "character": "下",
+    "meaning": "низ",
+    "kun_reading_romaji": "shita",
+    "on_reading_romaji": "ka",
+    "writing_note": "Три черты. Зеркало знака 上: сначала длинная горизонтальная черта, потом вертикаль вниз и короткая черта справа.",
+    "example_words": [
+      {
+        "word": "下",
+        "kana": "した",
+        "romaji": "shita",
+        "translation": "под, низ"
+      },
+      {
+        "word": "地下鉄",
+        "kana": "ちかてつ",
+        "romaji": "chikatetsu",
+        "translation": "метро"
+      },
+      {
+        "word": "下手",
+        "kana": "へた",
+        "romaji": "heta",
+        "translation": "неумелый"
+      }
+    ]
+  },
+  {
+    "character": "学",
+    "meaning": "учиться",
+    "kun_reading_romaji": "mana(bu)",
+    "on_reading_romaji": "gaku",
+    "writing_note": "Восемь черт. Сверху три точки и «крышка», снизу «ребёнок» 子: ребёнок под крышей школы.",
+    "example_words": [
+      {
+        "word": "学生",
+        "kana": "がくせい",
+        "romaji": "gakusei",
+        "translation": "студент"
+      },
+      {
+        "word": "大学",
+        "kana": "だいがく",
+        "romaji": "daigaku",
+        "translation": "университет"
+      },
+      {
+        "word": "学校",
+        "kana": "がっこう",
+        "romaji": "gakkou",
+        "translation": "школа"
+      }
+    ]
+  },
+  {
+    "character": "何",
+    "meaning": "что",
+    "kun_reading_romaji": "nani",
+    "on_reading_romaji": "ka",
+    "writing_note": "Семь черт. Слева «человек» в укороченной форме, справа — остальная часть.",
+    "example_words": [
+      {
+        "word": "何",
+        "kana": "なに",
+        "romaji": "nani",
+        "translation": "что"
+      },
+      {
+        "word": "何時",
+        "kana": "なんじ",
+        "romaji": "nanji",
+        "translation": "который час"
+      },
+      {
+        "word": "何人",
+        "kana": "なんにん",
+        "romaji": "nannin",
+        "translation": "сколько человек"
+      }
+    ]
+  },
+  {
+    "character": "来",
+    "meaning": "приходить",
+    "kun_reading_romaji": "ku(ru)",
+    "on_reading_romaji": "rai",
+    "writing_note": "Семь черт. Сначала верхняя горизонталь, затем вертикаль через весь знак, потом боковые черты и нижняя горизонталь.",
+    "example_words": [
+      {
+        "word": "来る",
+        "kana": "くる",
+        "romaji": "kuru",
+        "translation": "приходить"
+      },
+      {
+        "word": "来年",
+        "kana": "らいねん",
+        "romaji": "rainen",
+        "translation": "следующий год"
+      },
+      {
+        "word": "来週",
+        "kana": "らいしゅう",
+        "romaji": "raishuu",
+        "translation": "следующая неделя"
+      }
+    ]
+  },
+  {
+    "character": "話",
+    "meaning": "говорить; рассказ",
+    "kun_reading_romaji": "hana(su)",
+    "on_reading_romaji": "wa",
+    "writing_note": "Тринадцать черт. Слева «слово» 言, справа «язык» 舌. Сначала левая часть целиком.",
+    "example_words": [
+      {
+        "word": "話す",
+        "kana": "はなす",
+        "romaji": "hanasu",
+        "translation": "говорить"
+      },
+      {
+        "word": "電話",
+        "kana": "でんわ",
+        "romaji": "denwa",
+        "translation": "телефон"
+      },
+      {
+        "word": "会話",
+        "kana": "かいわ",
+        "romaji": "kaiwa",
+        "translation": "разговор"
+      }
+    ]
+  },
+  {
+    "character": "高",
+    "meaning": "высокий; дорогой",
+    "kun_reading_romaji": "taka(i)",
+    "on_reading_romaji": "kou",
+    "writing_note": "Десять черт. Сверху вниз: точка, горизонталь, «рот», затем нижняя часть — как многоэтажная башня.",
+    "example_words": [
+      {
+        "word": "高い",
+        "kana": "たかい",
+        "romaji": "takai",
+        "translation": "высокий; дорогой"
+      },
+      {
+        "word": "高校",
+        "kana": "こうこう",
+        "romaji": "koukou",
+        "translation": "старшая школа"
+      },
+      {
+        "word": "高さ",
+        "kana": "たかさ",
+        "romaji": "takasa",
+        "translation": "высота"
+      }
+    ]
+  },
+  {
+    "character": "今",
+    "meaning": "сейчас",
+    "kun_reading_romaji": "ima",
+    "on_reading_romaji": "kon",
+    "writing_note": "Четыре черты. Сверху «крышка» из двух черт, под ней — ещё две.",
+    "example_words": [
+      {
+        "word": "今",
+        "kana": "いま",
+        "romaji": "ima",
+        "translation": "сейчас"
+      },
+      {
+        "word": "今日",
+        "kana": "きょう",
+        "romaji": "kyou",
+        "translation": "сегодня"
+      },
+      {
+        "word": "今年",
+        "kana": "ことし",
+        "romaji": "kotoshi",
+        "translation": "этот год"
+      }
+    ]
+  },
+  {
+    "character": "書",
+    "meaning": "писать",
+    "kun_reading_romaji": "ka(ku)",
+    "on_reading_romaji": "sho",
+    "writing_note": "Десять черт. Сверху «кисть», снизу «солнце» 日. Верхняя часть пишется целиком до нижней.",
+    "example_words": [
+      {
+        "word": "書く",
+        "kana": "かく",
+        "romaji": "kaku",
+        "translation": "писать"
+      },
+      {
+        "word": "辞書",
+        "kana": "じしょ",
+        "romaji": "jisho",
+        "translation": "словарь"
+      },
+      {
+        "word": "図書館",
+        "kana": "としょかん",
+        "romaji": "toshokan",
+        "translation": "библиотека"
+      }
+    ]
+  },
+  {
+    "character": "五",
+    "meaning": "пять",
+    "kun_reading_romaji": "itsu(tsu)",
+    "on_reading_romaji": "go",
+    "writing_note": "Четыре черты. Сначала верхняя горизонталь, потом вертикаль и изгиб, в конце — нижняя горизонталь.",
+    "example_words": [
+      {
+        "word": "五つ",
+        "kana": "いつつ",
+        "romaji": "itsutsu",
+        "translation": "пять (предметов)"
+      },
+      {
+        "word": "五月",
+        "kana": "ごがつ",
+        "romaji": "gogatsu",
+        "translation": "май"
+      },
+      {
+        "word": "五分",
+        "kana": "ごふん",
+        "romaji": "gofun",
+        "translation": "пять минут"
+      }
+    ]
+  },
+  {
+    "character": "名",
+    "meaning": "имя",
+    "kun_reading_romaji": "na",
+    "on_reading_romaji": "mei",
+    "writing_note": "Шесть черт. Сверху «вечер» 夕, снизу «рот» 口: в темноте называют себя по имени.",
+    "example_words": [
+      {
+        "word": "名前",
+        "kana": "なまえ",
+        "romaji": "namae",
+        "translation": "имя"
+      },
+      {
+        "word": "有名",
+        "kana": "ゆうめい",
+        "romaji": "yuumei",
+        "translation": "известный"
+      },
+      {
+        "word": "名人",
+        "kana": "めいじん",
+        "romaji": "meijin",
+        "translation": "мастер"
+      }
+    ]
+  },
+  {
+    "character": "男",
+    "meaning": "мужчина",
+    "kun_reading_romaji": "otoko",
+    "on_reading_romaji": "dan",
+    "writing_note": "Семь черт. Сверху «поле» 田, снизу «сила» 力: тот, кто работает в поле.",
+    "example_words": [
+      {
+        "word": "男",
+        "kana": "おとこ",
+        "romaji": "otoko",
+        "translation": "мужчина"
+      },
+      {
+        "word": "男の子",
+        "kana": "おとこのこ",
+        "romaji": "otokonoko",
+        "translation": "мальчик"
+      },
+      {
+        "word": "男性",
+        "kana": "だんせい",
+        "romaji": "dansei",
+        "translation": "мужчина (офиц.)"
+      }
+    ]
+  },
+  {
+    "character": "外",
+    "meaning": "снаружи",
+    "kun_reading_romaji": "soto",
+    "on_reading_romaji": "gai",
+    "writing_note": "Пять черт. Слева «вечер» 夕, справа — остальное. Сначала левая часть.",
+    "example_words": [
+      {
+        "word": "外",
+        "kana": "そと",
+        "romaji": "soto",
+        "translation": "снаружи"
+      },
+      {
+        "word": "外国",
+        "kana": "がいこく",
+        "romaji": "gaikoku",
+        "translation": "заграница"
+      },
+      {
+        "word": "外国人",
+        "kana": "がいこくじん",
+        "romaji": "gaikokujin",
+        "translation": "иностранец"
+      }
+    ]
+  },
+  {
+    "character": "四",
+    "meaning": "четыре",
+    "kun_reading_romaji": "yo(ttsu)",
+    "on_reading_romaji": "shi",
+    "writing_note": "Пять черт. Рамка, как у 口, но с двумя чертами внутри; нижняя черта закрывает знак последней.",
+    "example_words": [
+      {
+        "word": "四つ",
+        "kana": "よっつ",
+        "romaji": "yottsu",
+        "translation": "четыре (предмета)"
+      },
+      {
+        "word": "四月",
+        "kana": "しがつ",
+        "romaji": "shigatsu",
+        "translation": "апрель"
+      },
+      {
+        "word": "四人",
+        "kana": "よにん",
+        "romaji": "yonin",
+        "translation": "четыре человека"
+      }
+    ]
+  },
+  {
+    "character": "先",
+    "meaning": "впереди; прежде",
+    "kun_reading_romaji": "saki",
+    "on_reading_romaji": "sen",
+    "writing_note": "Шесть черт. Сверху короткие черты, снизу — «ноги», как у 見.",
+    "example_words": [
+      {
+        "word": "先生",
+        "kana": "せんせい",
+        "romaji": "sensei",
+        "translation": "учитель"
+      },
+      {
+        "word": "先月",
+        "kana": "せんげつ",
+        "romaji": "sengetsu",
+        "translation": "прошлый месяц"
+      },
+      {
+        "word": "先週",
+        "kana": "せんしゅう",
+        "romaji": "senshuu",
+        "translation": "прошлая неделя"
+      }
+    ]
+  },
+  {
+    "character": "東",
+    "meaning": "восток",
+    "kun_reading_romaji": "higashi",
+    "on_reading_romaji": "tou",
+    "writing_note": "Восемь черт. Знак «дерево» 木 с «солнцем» 日 внутри: солнце встаёт за деревьями.",
+    "example_words": [
+      {
+        "word": "東",
+        "kana": "ひがし",
+        "romaji": "higashi",
+        "translation": "восток"
+      },
+      {
+        "word": "東京",
+        "kana": "とうきょう",
+        "romaji": "toukyou",
+        "translation": "Токио"
+      },
+      {
+        "word": "東口",
+        "kana": "ひがしぐち",
+        "romaji": "higashiguchi",
+        "translation": "восточный выход"
+      }
+    ]
+  },
+  {
+    "character": "聞",
+    "meaning": "слушать",
+    "kun_reading_romaji": "ki(ku)",
+    "on_reading_romaji": "bun",
+    "writing_note": "Четырнадцать черт. Сначала «ворота» 門, потом «ухо» 耳 внутри: ухо, приложенное к воротам.",
+    "example_words": [
+      {
+        "word": "聞く",
+        "kana": "きく",
+        "romaji": "kiku",
+        "translation": "слушать; спрашивать"
+      },
+      {
+        "word": "新聞",
+        "kana": "しんぶん",
+        "romaji": "shinbun",
+        "translation": "газета"
+      }
+    ]
+  },
+  {
+    "character": "語",
+    "meaning": "язык; слово",
+    "kun_reading_romaji": "kata(ru)",
+    "on_reading_romaji": "go",
+    "writing_note": "Четырнадцать черт. Слева «слово» 言, справа — остальная часть. Сначала левая.",
+    "example_words": [
+      {
+        "word": "日本語",
+        "kana": "にほんご",
+        "romaji": "nihongo",
+        "translation": "японский язык"
+      },
+      {
+        "word": "英語",
+        "kana": "えいご",
+        "romaji": "eigo",
+        "translation": "английский язык"
+      },
+      {
+        "word": "物語",
+        "kana": "ものがたり",
+        "romaji": "monogatari",
+        "translation": "повесть"
+      }
+    ]
+  },
+  {
+    "character": "九",
+    "meaning": "девять",
+    "kun_reading_romaji": "kokono(tsu)",
+    "on_reading_romaji": "kyuu",
+    "writing_note": "Две черты. Сначала короткая черта влево-вниз, потом длинная с загибом.",
+    "example_words": [
+      {
+        "word": "九つ",
+        "kana": "ここのつ",
+        "romaji": "kokonotsu",
+        "translation": "девять (предметов)"
+      },
+      {
+        "word": "九月",
+        "kana": "くがつ",
+        "romaji": "kugatsu",
+        "translation": "сентябрь"
+      },
+      {
+        "word": "九時",
+        "kana": "くじ",
+        "romaji": "kuji",
+        "translation": "девять часов"
+      }
+    ]
+  },
+  {
+    "character": "食",
+    "meaning": "еда; есть",
+    "kun_reading_romaji": "ta(beru)",
+    "on_reading_romaji": "shoku",
+    "writing_note": "Девять черт. Сверху «крышка», под ней остальное — еда под крышей.",
+    "example_words": [
+      {
+        "word": "食べる",
+        "kana": "たべる",
+        "romaji": "taberu",
+        "translation": "есть"
+      },
+      {
+        "word": "食事",
+        "kana": "しょくじ",
+        "romaji": "shokuji",
+        "translation": "приём пищи"
+      },
+      {
+        "word": "朝食",
+        "kana": "ちょうしょく",
+        "romaji": "choushoku",
+        "translation": "завтрак"
+      }
+    ]
+  },
+  {
+    "character": "八",
+    "meaning": "восемь",
+    "kun_reading_romaji": "ya(ttsu)",
+    "on_reading_romaji": "hachi",
+    "writing_note": "Две черты. Сначала левая, потом правая — они расходятся книзу и не соприкасаются.",
+    "example_words": [
+      {
+        "word": "八つ",
+        "kana": "やっつ",
+        "romaji": "yattsu",
+        "translation": "восемь (предметов)"
+      },
+      {
+        "word": "八月",
+        "kana": "はちがつ",
+        "romaji": "hachigatsu",
+        "translation": "август"
+      },
+      {
+        "word": "八時",
+        "kana": "はちじ",
+        "romaji": "hachiji",
+        "translation": "восемь часов"
+      }
+    ]
+  },
+  {
+    "character": "天",
+    "meaning": "небо",
+    "kun_reading_romaji": "ama",
+    "on_reading_romaji": "ten",
+    "writing_note": "Четыре черты. Как 大, но с добавленной горизонталью сверху: человек под небом.",
+    "example_words": [
+      {
+        "word": "天気",
+        "kana": "てんき",
+        "romaji": "tenki",
+        "translation": "погода"
+      },
+      {
+        "word": "天国",
+        "kana": "てんごく",
+        "romaji": "tengoku",
+        "translation": "рай"
+      },
+      {
+        "word": "雨天",
+        "kana": "うてん",
+        "romaji": "uten",
+        "translation": "дождливая погода"
+      }
+    ]
+  },
+  {
+    "character": "六",
+    "meaning": "шесть",
+    "kun_reading_romaji": "mu(ttsu)",
+    "on_reading_romaji": "roku",
+    "writing_note": "Четыре черты. Точка сверху, под ней горизонталь, затем две расходящиеся черты.",
+    "example_words": [
+      {
+        "word": "六つ",
+        "kana": "むっつ",
+        "romaji": "muttsu",
+        "translation": "шесть (предметов)"
+      },
+      {
+        "word": "六月",
+        "kana": "ろくがつ",
+        "romaji": "rokugatsu",
+        "translation": "июнь"
+      },
+      {
+        "word": "六時",
+        "kana": "ろくじ",
+        "romaji": "rokuji",
+        "translation": "шесть часов"
+      }
+    ]
+  },
+  {
+    "character": "万",
+    "meaning": "десять тысяч",
+    "kun_reading_romaji": "yorozu",
+    "on_reading_romaji": "man",
+    "writing_note": "Три черты. Горизонталь, затем черта влево-вниз и завершающая черта с загибом.",
+    "example_words": [
+      {
+        "word": "一万",
+        "kana": "いちまん",
+        "romaji": "ichiman",
+        "translation": "десять тысяч"
+      },
+      {
+        "word": "万年筆",
+        "kana": "まんねんひつ",
+        "romaji": "mannenhitsu",
+        "translation": "авторучка"
+      }
+    ]
+  },
+  {
+    "character": "白",
+    "meaning": "белый",
+    "kun_reading_romaji": "shiro(i)",
+    "on_reading_romaji": "haku",
+    "writing_note": "Пять черт. Как «солнце» 日, но с короткой чертой сверху.",
+    "example_words": [
+      {
+        "word": "白い",
+        "kana": "しろい",
+        "romaji": "shiroi",
+        "translation": "белый"
+      },
+      {
+        "word": "面白い",
+        "kana": "おもしろい",
+        "romaji": "omoshiroi",
+        "translation": "интересный"
+      },
+      {
+        "word": "白紙",
+        "kana": "はくし",
+        "romaji": "hakushi",
+        "translation": "чистый лист"
+      }
+    ]
+  },
+  {
+    "character": "七",
+    "meaning": "семь",
+    "kun_reading_romaji": "nana(tsu)",
+    "on_reading_romaji": "shichi",
+    "writing_note": "Две черты. Горизонталь, затем черта вниз с загибом вправо.",
+    "example_words": [
+      {
+        "word": "七つ",
+        "kana": "ななつ",
+        "romaji": "nanatsu",
+        "translation": "семь (предметов)"
+      },
+      {
+        "word": "七月",
+        "kana": "しちがつ",
+        "romaji": "shichigatsu",
+        "translation": "июль"
+      },
+      {
+        "word": "七時",
+        "kana": "しちじ",
+        "romaji": "shichiji",
+        "translation": "семь часов"
+      }
+    ]
+  },
+  {
+    "character": "円",
+    "meaning": "круг; иена",
+    "kun_reading_romaji": "maru(i)",
+    "on_reading_romaji": "en",
+    "writing_note": "Четыре черты. Рамка с двумя чертами внутри; левая сторона пишется первой.",
+    "example_words": [
+      {
+        "word": "円",
+        "kana": "えん",
+        "romaji": "en",
+        "translation": "иена"
+      },
+      {
+        "word": "千円",
+        "kana": "せんえん",
+        "romaji": "sen'en",
+        "translation": "тысяча иен"
+      },
+      {
+        "word": "円い",
+        "kana": "まるい",
+        "romaji": "marui",
+        "translation": "круглый"
+      }
+    ]
+  },
+  {
+    "character": "電",
+    "meaning": "электричество",
+    "kun_reading_romaji": null,
+    "on_reading_romaji": "den",
+    "writing_note": "Тринадцать черт. Сверху «дождь» 雨, снизу — остальная часть: молния в грозу.",
+    "example_words": [
+      {
+        "word": "電気",
+        "kana": "でんき",
+        "romaji": "denki",
+        "translation": "электричество"
+      },
+      {
+        "word": "電話",
+        "kana": "でんわ",
+        "romaji": "denwa",
+        "translation": "телефон"
+      },
+      {
+        "word": "電車",
+        "kana": "でんしゃ",
+        "romaji": "densha",
+        "translation": "электричка"
+      }
+    ]
+  },
+  {
+    "character": "父",
+    "meaning": "отец",
+    "kun_reading_romaji": "chichi",
+    "on_reading_romaji": "fu",
+    "writing_note": "Четыре черты. Сверху две короткие расходящиеся черты, снизу — две длинные накрест.",
+    "example_words": [
+      {
+        "word": "父",
+        "kana": "ちち",
+        "romaji": "chichi",
+        "translation": "отец (свой)"
+      },
+      {
+        "word": "お父さん",
+        "kana": "おとうさん",
+        "romaji": "otousan",
+        "translation": "папа"
+      },
+      {
+        "word": "父母",
+        "kana": "ふぼ",
+        "romaji": "fubo",
+        "translation": "родители"
+      }
+    ]
+  },
+  {
+    "character": "北",
+    "meaning": "север",
+    "kun_reading_romaji": "kita",
+    "on_reading_romaji": "hoku",
+    "writing_note": "Пять черт. Сначала левая половина, потом правая — две фигуры спиной друг к другу.",
+    "example_words": [
+      {
+        "word": "北",
+        "kana": "きた",
+        "romaji": "kita",
+        "translation": "север"
+      },
+      {
+        "word": "北口",
+        "kana": "きたぐち",
+        "romaji": "kitaguchi",
+        "translation": "северный выход"
+      },
+      {
+        "word": "東北",
+        "kana": "とうほく",
+        "romaji": "touhoku",
+        "translation": "Тохоку (регион)"
+      }
+    ]
+  },
+  {
+    "character": "車",
+    "meaning": "машина; повозка",
+    "kun_reading_romaji": "kuruma",
+    "on_reading_romaji": "sha",
+    "writing_note": "Семь черт. Вид на телегу сверху: сначала верхняя черта, потом «коробка» и длинная вертикаль насквозь.",
+    "example_words": [
+      {
+        "word": "車",
+        "kana": "くるま",
+        "romaji": "kuruma",
+        "translation": "машина"
+      },
+      {
+        "word": "電車",
+        "kana": "でんしゃ",
+        "romaji": "densha",
+        "translation": "электричка"
+      },
+      {
+        "word": "自転車",
+        "kana": "じてんしゃ",
+        "romaji": "jitensha",
+        "translation": "велосипед"
+      }
+    ]
+  },
+  {
+    "character": "母",
+    "meaning": "мать",
+    "kun_reading_romaji": "haha",
+    "on_reading_romaji": "bo",
+    "writing_note": "Пять черт. Основа знака, затем две точки внутри — они пишутся ближе к концу.",
+    "example_words": [
+      {
+        "word": "母",
+        "kana": "はは",
+        "romaji": "haha",
+        "translation": "мать (своя)"
+      },
+      {
+        "word": "お母さん",
+        "kana": "おかあさん",
+        "romaji": "okaasan",
+        "translation": "мама"
+      },
+      {
+        "word": "母国",
+        "kana": "ぼこく",
+        "romaji": "bokoku",
+        "translation": "родина"
+      }
+    ]
+  },
+  {
+    "character": "半",
+    "meaning": "половина",
+    "kun_reading_romaji": "naka(ba)",
+    "on_reading_romaji": "han",
+    "writing_note": "Пять черт. Сначала две точки сверху, потом горизонтали и вертикаль через весь знак.",
+    "example_words": [
+      {
+        "word": "半分",
+        "kana": "はんぶん",
+        "romaji": "hanbun",
+        "translation": "половина"
+      },
+      {
+        "word": "半年",
+        "kana": "はんとし",
+        "romaji": "hantoshi",
+        "translation": "полгода"
+      },
+      {
+        "word": "二時半",
+        "kana": "にじはん",
+        "romaji": "nijihan",
+        "translation": "половина третьего"
+      }
+    ]
+  },
+  {
+    "character": "百",
+    "meaning": "сто",
+    "kun_reading_romaji": "momo",
+    "on_reading_romaji": "hyaku",
+    "writing_note": "Шесть черт. Горизонталь сверху, под ней «солнце» 日.",
+    "example_words": [
+      {
+        "word": "百",
+        "kana": "ひゃく",
+        "romaji": "hyaku",
+        "translation": "сто"
+      },
+      {
+        "word": "三百",
+        "kana": "さんびゃく",
+        "romaji": "sanbyaku",
+        "translation": "триста"
+      },
+      {
+        "word": "百円",
+        "kana": "ひゃくえん",
+        "romaji": "hyakuen",
+        "translation": "сто иен"
+      }
+    ]
+  },
+  {
+    "character": "西",
+    "meaning": "запад",
+    "kun_reading_romaji": "nishi",
+    "on_reading_romaji": "sei",
+    "writing_note": "Шесть черт. Горизонталь сверху, затем рамка и то, что внутри неё.",
+    "example_words": [
+      {
+        "word": "西",
+        "kana": "にし",
+        "romaji": "nishi",
+        "translation": "запад"
+      },
+      {
+        "word": "西口",
+        "kana": "にしぐち",
+        "romaji": "nishiguchi",
+        "translation": "западный выход"
+      },
+      {
+        "word": "関西",
+        "kana": "かんさい",
+        "romaji": "kansai",
+        "translation": "Кансай (регион)"
+      }
+    ]
+  },
+  {
+    "character": "読",
+    "meaning": "читать",
+    "kun_reading_romaji": "yo(mu)",
+    "on_reading_romaji": "doku",
+    "writing_note": "Четырнадцать черт. Слева «слово» 言, справа — остальная часть. Сначала левая.",
+    "example_words": [
+      {
+        "word": "読む",
+        "kana": "よむ",
+        "romaji": "yomu",
+        "translation": "читать"
+      },
+      {
+        "word": "読書",
+        "kana": "どくしょ",
+        "romaji": "dokusho",
+        "translation": "чтение"
+      }
+    ]
+  },
+  {
+    "character": "千",
+    "meaning": "тысяча",
+    "kun_reading_romaji": "chi",
+    "on_reading_romaji": "sen",
+    "writing_note": "Три черты. Короткая черта сверху, затем горизонталь и вертикаль вниз.",
+    "example_words": [
+      {
+        "word": "千",
+        "kana": "せん",
+        "romaji": "sen",
+        "translation": "тысяча"
+      },
+      {
+        "word": "千円",
+        "kana": "せんえん",
+        "romaji": "sen'en",
+        "translation": "тысяча иен"
+      }
+    ]
+  },
+  {
+    "character": "校",
+    "meaning": "школа",
+    "kun_reading_romaji": null,
+    "on_reading_romaji": "kou",
+    "writing_note": "Десять черт. Слева «дерево» 木, справа — остальная часть. Сначала левая.",
+    "example_words": [
+      {
+        "word": "学校",
+        "kana": "がっこう",
+        "romaji": "gakkou",
+        "translation": "школа"
+      },
+      {
+        "word": "高校",
+        "kana": "こうこう",
+        "romaji": "koukou",
+        "translation": "старшая школа"
+      },
+      {
+        "word": "校長",
+        "kana": "こうちょう",
+        "romaji": "kouchou",
+        "translation": "директор школы"
+      }
+    ]
+  },
+  {
+    "character": "右",
+    "meaning": "право",
+    "kun_reading_romaji": "migi",
+    "on_reading_romaji": "u",
+    "writing_note": "Пять черт. Сначала черта влево-вниз, потом горизонталь, затем «рот» 口 снизу.",
+    "example_words": [
+      {
+        "word": "右",
+        "kana": "みぎ",
+        "romaji": "migi",
+        "translation": "право, правая сторона"
+      },
+      {
+        "word": "右手",
+        "kana": "みぎて",
+        "romaji": "migite",
+        "translation": "правая рука"
+      }
+    ]
+  },
+  {
+    "character": "南",
+    "meaning": "юг",
+    "kun_reading_romaji": "minami",
+    "on_reading_romaji": "nan",
+    "writing_note": "Девять черт. Сверху короткая черта, под ней рамка и её содержимое.",
+    "example_words": [
+      {
+        "word": "南",
+        "kana": "みなみ",
+        "romaji": "minami",
+        "translation": "юг"
+      },
+      {
+        "word": "南口",
+        "kana": "みなみぐち",
+        "romaji": "minamiguchi",
+        "translation": "южный выход"
+      }
+    ]
+  },
+  {
+    "character": "左",
+    "meaning": "лево",
+    "kun_reading_romaji": "hidari",
+    "on_reading_romaji": "sa",
+    "writing_note": "Пять черт. Начинается так же, как 右, но снизу не «рот», а «работа» 工.",
+    "example_words": [
+      {
+        "word": "左",
+        "kana": "ひだり",
+        "romaji": "hidari",
+        "translation": "лево, левая сторона"
+      },
+      {
+        "word": "左手",
+        "kana": "ひだりて",
+        "romaji": "hidarite",
+        "translation": "левая рука"
+      }
+    ]
+  },
+  {
+    "character": "友",
+    "meaning": "друг",
+    "kun_reading_romaji": "tomo",
+    "on_reading_romaji": "yuu",
+    "writing_note": "Четыре черты. Две руки, протянутые друг к другу.",
+    "example_words": [
+      {
+        "word": "友達",
+        "kana": "ともだち",
+        "romaji": "tomodachi",
+        "translation": "друг"
+      },
+      {
+        "word": "友人",
+        "kana": "ゆうじん",
+        "romaji": "yuujin",
+        "translation": "друг (офиц.)"
+      }
+    ]
+  },
+  {
+    "character": "毎",
+    "meaning": "каждый",
+    "kun_reading_romaji": "goto",
+    "on_reading_romaji": "mai",
+    "writing_note": "Шесть черт. Сверху короткая черта, ниже — часть, похожая на «мать» 母.",
+    "example_words": [
+      {
+        "word": "毎日",
+        "kana": "まいにち",
+        "romaji": "mainichi",
+        "translation": "каждый день"
+      },
+      {
+        "word": "毎朝",
+        "kana": "まいあさ",
+        "romaji": "maiasa",
+        "translation": "каждое утро"
+      },
+      {
+        "word": "毎年",
+        "kana": "まいとし",
+        "romaji": "maitoshi",
+        "translation": "каждый год"
+      }
+    ]
+  },
+  {
+    "character": "雨",
+    "meaning": "дождь",
+    "kun_reading_romaji": "ame",
+    "on_reading_romaji": "u",
+    "writing_note": "Восемь черт. Сначала верхняя черта и рамка, потом четыре капли внутри.",
+    "example_words": [
+      {
+        "word": "雨",
+        "kana": "あめ",
+        "romaji": "ame",
+        "translation": "дождь"
+      },
+      {
+        "word": "大雨",
+        "kana": "おおあめ",
+        "romaji": "ooame",
+        "translation": "ливень"
+      },
+      {
+        "word": "雨天",
+        "kana": "うてん",
+        "romaji": "uten",
+        "translation": "дождливая погода"
+      }
+    ]
+  },
+  {
+    "character": "休",
+    "meaning": "отдых",
+    "kun_reading_romaji": "yasu(mu)",
+    "on_reading_romaji": "kyuu",
+    "writing_note": "Шесть черт. Слева «человек», справа «дерево» 木: человек отдыхает под деревом.",
+    "example_words": [
+      {
+        "word": "休む",
+        "kana": "やすむ",
+        "romaji": "yasumu",
+        "translation": "отдыхать"
+      },
+      {
+        "word": "休み",
+        "kana": "やすみ",
+        "romaji": "yasumi",
+        "translation": "выходной, перерыв"
+      },
+      {
+        "word": "昼休み",
+        "kana": "ひるやすみ",
+        "romaji": "hiruyasumi",
+        "translation": "обеденный перерыв"
+      }
+    ]
+  },
+  {
+    "character": "午",
+    "meaning": "полдень",
+    "kun_reading_romaji": "uma",
+    "on_reading_romaji": "go",
+    "writing_note": "Четыре черты. Похож на 牛, но без верхней короткой черты слева.",
+    "example_words": [
+      {
+        "word": "午前",
+        "kana": "ごぜん",
+        "romaji": "gozen",
+        "translation": "до полудня"
+      },
+      {
+        "word": "午後",
+        "kana": "ごご",
+        "romaji": "gogo",
+        "translation": "после полудня"
+      }
     ]
   }
 ]
