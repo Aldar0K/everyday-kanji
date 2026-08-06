@@ -22,3 +22,15 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Секреты — только локально
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Исходники для сборки справочника: качаются скриптом, весят десятки мегабайт
+backend/data/raw/

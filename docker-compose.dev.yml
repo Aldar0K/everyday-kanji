@@ -1,0 +1,25 @@
+# Настройки только для локальной разработки.
+#
+# Файл назван НЕ docker-compose.override.yml намеренно: override подхватывается
+# автоматически, и на сервере его легко применить по невнимательности — тогда в
+# production поедут смонтированные исходники и авто-перезагрузка. Здесь нужен
+# явный вызов:
+#
+#   docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d
+#
+# Production при этом остаётся обычным `docker compose up -d`.
+
+services:
+  backend:
+    volumes:
+      # Смонтированный код нужен в первую очередь для Alembic: без него
+      # сгенерированная миграция остаётся внутри контейнера и пропадает
+      # вместе с ним при --rm.
+      - ./backend:/app
+    command: >
+      uvicorn app.main:app
+      --host 0.0.0.0
+      --port 8000
+      --proxy-headers
+      --forwarded-allow-ips="*"
+      --reload
