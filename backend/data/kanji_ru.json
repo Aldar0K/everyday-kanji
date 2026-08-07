@@ -2,6 +2,7 @@
   {
     "character": "一",
     "meaning": "один",
+    "kun_reading_kana": "ひと.つ",
     "kun_reading_romaji": "hito(tsu)",
     "on_reading_romaji": "ichi",
     "writing_note": "Одна черта. Веди слева направо, ровно и спокойно.",
@@ -29,6 +30,7 @@
   {
     "character": "二",
     "meaning": "два",
+    "kun_reading_kana": "ふた.つ",
     "kun_reading_romaji": "futa(tsu)",
     "on_reading_romaji": "ni",
     "writing_note": "Две черты. Сначала верхняя, потом нижняя — обе слева направо.",
@@ -56,6 +58,7 @@
   {
     "character": "三",
     "meaning": "три",
+    "kun_reading_kana": "みっ.つ",
     "kun_reading_romaji": "mi(ttsu)",
     "on_reading_romaji": "san",
     "writing_note": "Три черты подряд, сверху вниз: верхняя, средняя, нижняя. Каждая — слева направо.",
@@ -137,6 +140,7 @@
   {
     "character": "大",
     "meaning": "большой",
+    "kun_reading_kana": "おお.きい",
     "kun_reading_romaji": "oo(kii)",
     "on_reading_romaji": "dai",
     "writing_note": "Три черты. Сначала горизонтальная, потом от центра — влево-вниз и вправо-вниз, как раскинутые руки.",
@@ -165,6 +169,7 @@
     "character": "木",
     "meaning": "дерево",
     "kun_reading_romaji": "ki",
+    "on_reading_kana": "モク",
     "on_reading_romaji": "moku",
     "writing_note": "Четыре черты: горизонтальная, вертикальная через неё, затем две черты-ветви вниз — влево и вправо.",
     "example_words": [
@@ -1178,6 +1183,7 @@
   {
     "character": "五",
     "meaning": "пять",
+    "kun_reading_kana": "いつ.つ",
     "kun_reading_romaji": "itsu(tsu)",
     "on_reading_romaji": "go",
     "writing_note": "Четыре черты. Сначала верхняя горизонталь, потом вертикаль и изгиб, в конце — нижняя горизонталь.",
@@ -1286,6 +1292,7 @@
   {
     "character": "四",
     "meaning": "четыре",
+    "kun_reading_kana": "よっ.つ",
     "kun_reading_romaji": "yo(ttsu)",
     "on_reading_romaji": "shi",
     "writing_note": "Пять черт. Рамка, как у 口, но с двумя чертами внутри; нижняя черта закрывает знак последней.",
@@ -1415,6 +1422,7 @@
   {
     "character": "九",
     "meaning": "девять",
+    "kun_reading_kana": "ここの.つ",
     "kun_reading_romaji": "kokono(tsu)",
     "on_reading_romaji": "kyuu",
     "writing_note": "Две черты. Сначала короткая черта влево-вниз, потом длинная с загибом.",
@@ -1442,6 +1450,7 @@
   {
     "character": "食",
     "meaning": "еда; есть",
+    "kun_reading_kana": "た.べる",
     "kun_reading_romaji": "ta(beru)",
     "on_reading_romaji": "shoku",
     "writing_note": "Девять черт. Сверху «крышка», под ней остальное — еда под крышей.",
@@ -1469,6 +1478,7 @@
   {
     "character": "八",
     "meaning": "восемь",
+    "kun_reading_kana": "やっ.つ",
     "kun_reading_romaji": "ya(ttsu)",
     "on_reading_romaji": "hachi",
     "writing_note": "Две черты. Сначала левая, потом правая — они расходятся книзу и не соприкасаются.",
@@ -1496,6 +1506,7 @@
   {
     "character": "天",
     "meaning": "небо",
+    "kun_reading_kana": "あま-",
     "kun_reading_romaji": "ama",
     "on_reading_romaji": "ten",
     "writing_note": "Четыре черты. Как 大, но с добавленной горизонталью сверху: человек под небом.",
@@ -1523,6 +1534,7 @@
   {
     "character": "六",
     "meaning": "шесть",
+    "kun_reading_kana": "むっ.つ",
     "kun_reading_romaji": "mu(ttsu)",
     "on_reading_romaji": "roku",
     "writing_note": "Четыре черты. Точка сверху, под ней горизонталь, затем две расходящиеся черты.",
@@ -1571,6 +1583,7 @@
   {
     "character": "白",
     "meaning": "белый",
+    "kun_reading_kana": "しろ.い",
     "kun_reading_romaji": "shiro(i)",
     "on_reading_romaji": "haku",
     "writing_note": "Пять черт. Как «солнце» 日, но с короткой чертой сверху.",
@@ -1598,6 +1611,7 @@
   {
     "character": "七",
     "meaning": "семь",
+    "kun_reading_kana": "なな.つ",
     "kun_reading_romaji": "nana(tsu)",
     "on_reading_romaji": "shichi",
     "writing_note": "Две черты. Горизонталь, затем черта вниз с загибом вправо.",
