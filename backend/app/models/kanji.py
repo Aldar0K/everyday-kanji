@@ -24,11 +24,10 @@ class Kanji(Base):
 
     # Выверенное человеком значение. Только оно показывается пользователю.
     meaning: Mapped[str | None] = mapped_column(Text, nullable=True)
-    # Догадка автоматического вывода. Хранится отдельно и наружу не отдаётся:
-    # замеры показали, что она ошибается примерно на каждом пятом базовом
-    # кандзи (山 → «спекуляция», 子 → «крыса»). Нужна только как черновик для
-    # ручной вычитки.
-    meaning_suggested: Mapped[str | None] = mapped_column(Text, nullable=True)
+    # Машинный перевод английских глосс KANJIDIC2, черновик для вычитки.
+    # Наружу через API не отдаётся и на is_published не влияет: публикует
+    # только человек, перенеся значение в kanji_ru.json.
+    meaning_suggested_ru: Mapped[str | None] = mapped_column(Text, nullable=True)
     meaning_en: Mapped[str | None] = mapped_column(Text, nullable=True)
 
     kun_reading_kana: Mapped[str | None] = mapped_column(String(64), nullable=True)

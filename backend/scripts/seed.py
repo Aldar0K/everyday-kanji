@@ -31,7 +31,7 @@ DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "kanji.json"
 UPDATABLE = (
     "order_index",
     "meaning",
-    "meaning_suggested",
+    "meaning_suggested_ru",
     "meaning_en",
     "kun_reading_kana",
     "kun_reading_romaji",
