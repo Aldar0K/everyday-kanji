@@ -48,11 +48,18 @@ async def trail(
 
     # Последние изученные, от новых к старым. Берём на один больше, чем нужно
     # для ленты: самый свежий может оказаться знаком сегодняшнего дня.
+    #
+    # Фильтр по is_published обязателен, хотя записи повторений есть только у
+    # начатых знаков. Знак можно снять с публикации (убрать из kanji_ru.json),
+    # и строки reviews при этом остаются — они специально переживают
+    # пересборку справочника. Без фильтра такой знак вернулся бы в ленту с
+    # пустым значением, а попав в today, отправил бы пользователя на экран
+    # урока, где GET /kanji/{id} отдаёт 404.
     rows = (
         await session.execute(
             select(Kanji, Review.created_at, Review.next_review_at)
             .join(Review, Review.kanji_id == Kanji.id)
-            .where(Review.device_id == device_id)
+            .where(Review.device_id == device_id, Kanji.is_published.is_(True))
             .order_by(Review.created_at.desc())
             .limit(recent + 1)
         )
