@@ -1,5 +1,6 @@
 from app.schemas.kanji import (
     ExampleWordOut,
+    KanjiListItemOut,
     KanjiListOut,
     KanjiOut,
     StrokeOut,
@@ -17,6 +18,7 @@ from app.schemas.review import (
 __all__ = [
     "ExampleWordOut",
     "Grade",
+    "KanjiListItemOut",
     "KanjiListOut",
     "KanjiOut",
     "LessonTodayOut",
