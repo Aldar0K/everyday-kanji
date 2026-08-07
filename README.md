@@ -81,9 +81,8 @@ docker compose build backend
 docker compose run --rm backend alembic upgrade head
 ```
 
-То же правило действует для `seed`: он читает `data/kanji.json` из
-образа, поэтому после пересборки справочника образ тоже собирается
-заново.
+Для `seed` пересборка **не** нужна: каталог `backend/data` монтируется в
+контейнер, поэтому справочник читается с диска, а не из образа.
 
 Миграции намеренно не запускаются при старте приложения: при нескольких
 воркерах это даёт гонку.
@@ -126,6 +125,7 @@ docker compose run --rm backend alembic upgrade head
 | GET | `/api/reviews/due` | Карточки, готовые к повторению |
 | POST | `/api/reviews/{kanji_id}` | Ответ на карточку, пересчёт SRS |
 | GET | `/api/stats` | Краткая статистика устройства |
+| GET | `/api/sources` | Источники данных, лицензии, внесённые изменения |
 
 Клиент шлёт заголовок `X-Timezone` с таймзоной IANA — от неё зависит
 граница суток для дневных счётчиков. Фронтенд делает это сам в
@@ -153,22 +153,23 @@ SM-2 с тремя оценками вместо канонических шес
 **81** — весь уровень JLPT N5 плюс один знак сверх него, то есть около
 трёх месяцев ежедневных уроков.
 
-Открытого источника «кандзи → русское значение» не существует, а
-косвенный вывод из словаря слов даёт правдоподобную ложь (山 →
-«спекуляция» вместо «гора»), поэтому смысл заполняется только руками.
+Открытого источника «кандзи → русское значение» не существует, поэтому
+смысл проходит через две ступени: модель переводит готовые английские
+глоссы KANJIDIC2 в черновик, человек подтверждает перевод. Публикует
+только вторая ступень — машинный текст хранится отдельным полем и наружу
+не отдаётся.
 
 Пересборка справочника:
 
 ```bash
 docker compose -f docker-compose.yml -f docker-compose.dev.yml run --rm backend \
-  python -m scripts.build_dataset --with-strokes
-docker compose build backend
+  python -m scripts.build_dataset
 docker compose run --rm backend python -m scripts.seed
 ```
 
 **Подробности — в [docs/kanji-pipeline.md](docs/kanji-pipeline.md):**
-источники и их покрытие, почему автовывод ничего не публикует, как
-добавить новый знак в уроки, известные пробелы.
+источники и их покрытие, перевод и вычитка значений, система записи
+ромадзи, как добавить новый знак в уроки, известные пробелы.
 
 ## Тесты
 
@@ -179,6 +180,14 @@ docker compose run --rm backend python -m scripts.seed
 
 ## Источники данных
 
-- [KANJIDIC2](https://www.edrdg.org/wiki/index.php/KANJIDIC_Project) — чтения, значения, число черт
-- [KanjiVG](https://kanjivg.tagaini.net/) — порядок черт
-- [AnchorI/jlpt-kanji-dictionary](https://github.com/AnchorI/jlpt-kanji-dictionary) — уровни JLPT, частотность, слова с русским переводом
+- [KANJIDIC2](https://www.edrdg.org/wiki/index.php/KANJIDIC_Project) — чтения и английские значения, CC BY-SA 4.0
+- [KanjiVG](https://kanjivg.tagaini.net/) — порядок черт, CC BY-SA 3.0
+- [AnchorI/jlpt-kanji-dictionary](https://github.com/AnchorI/jlpt-kanji-dictionary) — уровни JLPT, частотность, радикалы, MIT
+
+Авторы, лицензии и перечень внесённых изменений — в
+[ATTRIBUTION.md](ATTRIBUTION.md); те же данные отдаёт `GET /api/sources`.
+Оба собираются из `backend/app/sources.py`.
+
+Лицензии KANJIDIC2 и KanjiVG — copyleft (CC BY-SA) и требуют указания
+авторства **в интерфейсе приложения**, а не только в репозитории. Экрана
+«О программе» во фронтенде пока нет — открытая задача.
