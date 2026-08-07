@@ -14,6 +14,10 @@ from app.schemas.review import (
     TrailNodeOut,
     TrailOut,
 )
+from app.schemas.sources import (
+    SourceOut,
+    SourcesOut,
+)
 
 __all__ = [
     "ExampleWordOut",
@@ -24,6 +28,8 @@ __all__ = [
     "LessonTodayOut",
     "ReviewOut",
     "ReviewSubmitIn",
+    "SourceOut",
+    "SourcesOut",
     "StatsOut",
     "StrokeOut",
     "TrailNodeOut",
