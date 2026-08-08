@@ -16,6 +16,11 @@ on:
     branches: [main]
   # Ручной запуск из вкладки Actions — чтобы перевыкатить без пустого коммита.
   workflow_dispatch:
+    inputs:
+      force_seed:
+        description: "Залить справочник принудительно (обычно он заливается только когда менялся)"
+        type: boolean
+        default: false
 
 # Два пуша подряд иначе дадут два параллельных SSH-сеанса, которые одновременно
 # делают git pull и docker build в одном каталоге. Ждём предыдущий деплой, а не
@@ -36,12 +41,18 @@ jobs:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
-          # Без этого команды выполняются до конца даже после ошибки, и
-          # упавшая миграция дала бы зелёную галочку при сломанном проде.
-          script_stop: true
           script: |
+            # set -e обязателен. Отдельного входа script_stop у action больше
+            # нет (удалён, в v1.2.5 вызывает предупреждение о неизвестном
+            # параметре), и README предписывает заменять его именно этой
+            # строкой. Без неё команды выполнялись бы до конца даже после
+            # ошибки, и упавшая миграция дала бы зелёную галочку при сломанном
+            # проде.
             set -e
             cd /root/everyday-kanji
+
+            # Запоминаем, где были, чтобы ниже понять, менялся ли справочник.
+            BEFORE=$(git rev-parse HEAD)
 
             # --ff-only: если на сервере что-то коммитили руками, pull упадёт
             # явно, вместо того чтобы оставить репозиторий в состоянии
@@ -59,6 +70,36 @@ jobs:
             # запущенное против старой схемы оно отвечало бы ошибками.
             # Команда сама поднимет db и redis и дождётся их готовности.
             docker compose run --rm backend alembic upgrade head
+
+            # Сколько кандзи уже в базе. Пустая таблица — это либо первый
+            # деплой, либо потерянный том: сравнивать коммиты в таком случае
+            # бесполезно, заливать нужно безусловно. Именно на этом база на
+            # проде и осталась пустой: миграции создают схему, но не данные,
+            # а дифф на первом деплое пуст, потому что сравнивать не с чем.
+            #
+            # POSTGRES_USER и POSTGRES_DB берём из окружения самого контейнера
+            # db, чтобы не тащить сюда .env.
+            KANJI_COUNT=$(docker compose exec -T db \
+              sh -c 'psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" -tAc "select count(*) from kanji"' \
+              2>/dev/null | tr -d '[:space:]')
+            [ -n "$KANJI_COUNT" ] || KANJI_COUNT=0
+            echo "кандзи в базе: $KANJI_COUNT"
+
+            # На каждый push seed гонять можно — он идемпотентен, только
+            # UPSERT, — но это 5,7 МБ в базу и сброс кэша ради коммита в
+            # документацию. Поэтому три условия, и любое достаточно.
+            if [ "${{ inputs.force_seed }}" = "true" ]; then
+              echo "seed запрошен вручную"
+              docker compose run --rm backend python -m scripts.seed
+            elif [ "$KANJI_COUNT" -eq 0 ]; then
+              echo "база пуста — заливаю справочник"
+              docker compose run --rm backend python -m scripts.seed
+            elif git diff --quiet "$BEFORE" HEAD -- backend/data/kanji.json; then
+              echo "справочник не менялся — seed пропущен"
+            else
+              echo "справочник изменился — заливаю"
+              docker compose run --rm backend python -m scripts.seed
+            fi
 
             docker compose up -d
 
