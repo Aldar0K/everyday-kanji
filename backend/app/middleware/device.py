@@ -34,8 +34,10 @@ _TZ_HEADER = "x-timezone"
 class DeviceMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next):  # noqa: ANN001, ANN201
         # На health-check устройство не заводим: иначе любой мониторинг
-        # плодил бы строки в devices.
-        if request.url.path == "/api/health":
+        # плодил бы строки в devices. По той же причине пропускаем админку —
+        # иначе каждый заход в неё создавал бы устройство, и таблица, которую
+        # админка же и показывает, засорялась бы её собственными визитами.
+        if request.url.path == "/api/health" or request.url.path.startswith("/admin"):
             return await call_next(request)
 
         raw = request.cookies.get(settings.device_cookie_name)
