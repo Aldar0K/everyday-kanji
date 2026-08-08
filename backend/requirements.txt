@@ -7,6 +7,3 @@ alembic==1.14.0
 pydantic==2.10.4
 pydantic-settings==2.7.0
 redis==5.2.1
-# Админка на чтение по /admin. Версия без пина на starlette: sqladmin
-# требует starlette>=0.50, а её у нас держит fastapi==0.115.6.
-starlette-admin==0.17.1

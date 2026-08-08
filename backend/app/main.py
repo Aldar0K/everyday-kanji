@@ -4,7 +4,6 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 
 from app import redis_client
-from app.admin import mount_admin
 from app.config import settings
 from app.middleware import DeviceMiddleware, RateLimitMiddleware
 from app.routers import health, kanji, lesson, reviews, sources, stats, trail
@@ -50,7 +49,3 @@ app.include_router(lesson.router, prefix="/api")
 app.include_router(trail.router, prefix="/api")
 app.include_router(stats.router, prefix="/api")
 app.include_router(sources.router, prefix="/api")
-
-# Админка на чтение по /admin. Наружу закрыта HTTP Basic в nginx — сама она
-# авторизации не имеет, см. app/admin.py.
-mount_admin(app)

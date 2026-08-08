@@ -5,9 +5,6 @@
 # легко, и тогда правка просто не доедет до приложения; здесь для этой пары
 # есть одна цель `content`.
 
-# read -s для скрытого ввода пароля — не POSIX, в /bin/sh его может не быть.
-SHELL    := /bin/bash
-
 DC       := docker compose
 DC_DEV   := docker compose -f docker-compose.yml -f docker-compose.dev.yml
 BACKEND  := $(DC) run --rm backend
@@ -82,18 +79,6 @@ attribution: ## Перегенерировать ATTRIBUTION.md из app/sources
 	cd backend && $(PY) -m scripts.render_attribution
 
 # --- Прочее -------------------------------------------------------------
-
-admin-password: ## Задать пароль к админке: make admin-password ADMIN_USER=имя
-	@# ADMIN_USER, а не USER: USER есть в окружении любой оболочки, и проверка
-	@# на пустоту никогда бы не срабатывала — имя молча бралось бы системное.
-	@test -n "$(ADMIN_USER)" || (echo "нужно: make admin-password ADMIN_USER=имя" && exit 1)
-	@# Хэш считает контейнер httpd: на хосте не нужен apache2-utils, а bcrypt
-	@# (-B) не обрезает пароль до восьми значащих символов, как старый crypt.
-	@read -rsp "пароль для $(ADMIN_USER): " pw; echo; \
-		printf '%s' "$$pw" \
-		| docker run --rm -i httpd:2.4-alpine htpasswd -niB "$(ADMIN_USER)" \
-		| head -1 > nginx/.htpasswd
-	@echo "записано в nginx/.htpasswd — применить: make up"
 
 shell: ## Консоль внутри контейнера бэкенда
 	$(BACKEND) sh

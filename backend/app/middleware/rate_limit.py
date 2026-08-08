@@ -42,12 +42,7 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
 
     async def dispatch(self, request: Request, call_next):  # noqa: ANN001, ANN201
         # Health-check не лимитируем: он нужен для мониторинга и не нагружает базу.
-        #
-        # Админку тоже: одна её страница тянет десяток файлов статики, и лимит
-        # в 60 запросов в минуту выбирался бы за пару переходов. Публично она
-        # не открыта — доступ закрыт HTTP Basic в nginx, а лимитер защищает от
-        # анонимной нагрузки, которой здесь нет.
-        if request.url.path == "/api/health" or request.url.path.startswith("/admin"):
+        if request.url.path == "/api/health":
             return await call_next(request)
 
         is_write = request.method in _WRITE_METHODS
