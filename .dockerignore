@@ -1,9 +1,0 @@
-**/node_modules
-**/dist
-**/__pycache__
-**/.venv
-**/venv
-# Исходники справочника — десятки мегабайт, в образе не нужны
-backend/data/raw
-.git
-.env
