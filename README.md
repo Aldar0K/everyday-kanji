@@ -28,10 +28,13 @@ everyday-kanji/
 
 ```bash
 cp .env.example .env          # и подставить свои значения
-docker compose up -d
-docker compose run --rm backend alembic upgrade head
-docker compose run --rm backend python -m scripts.seed
+make up
+make migrate
+make seed
 ```
+
+`make` без аргументов покажет список команд. Длинные строки `docker compose`
+никуда не делись — Makefile их только сокращает, и любую можно набрать руками.
 
 Приложение — на `http://127.0.0.1:8082` (порт меняется через `APP_PORT`).
 Документация API вне production — на `/api/docs`.
@@ -159,13 +162,14 @@ SM-2 с тремя оценками вместо канонических шес
 только вторая ступень — машинный текст хранится отдельным полем и наружу
 не отдаётся.
 
-Пересборка справочника:
+Пересборка справочника — собрать и сразу залить:
 
 ```bash
-docker compose -f docker-compose.yml -f docker-compose.dev.yml run --rm backend \
-  python -m scripts.build_dataset
-docker compose run --rm backend python -m scripts.seed
+make content
 ```
+
+Это пара `make dataset` + `make seed`. Разделять их обычно незачем: собранный,
+но не залитый справочник до приложения не доезжает, и забыть второй шаг легко.
 
 **Подробности — в [docs/kanji-pipeline.md](docs/kanji-pipeline.md):**
 источники и их покрытие, перевод и вычитка значений, система записи

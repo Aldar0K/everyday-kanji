@@ -336,13 +336,16 @@ python -m scripts.review_meanings --from 300 # с order_index 300
 3. Пересобрать и залить:
 
 ```bash
-docker compose -f docker-compose.yml -f docker-compose.dev.yml run --rm backend \
-  python -m scripts.build_dataset
-docker compose run --rm backend python -m scripts.seed
+make content
 ```
 
 `docker compose build` между шагами больше **не нужен**: каталог
 `backend/data` монтируется в контейнер, и `seed` читает файл с диска.
+
+На сервере отдельно ничего делать не надо: деплой сам заливает справочник,
+если в пуше менялся `backend/data/kanji.json`. На коммиты, которые его не
+трогают, `seed` не запускается — гонять 5,7 МБ в базу и сбрасывать кэш ради
+правки в документации незачем.
 
 Обязательное поле ровно одно — `meaning`; именно оно включает
 `is_published`. Остальные желательны: без `writing_note` последний экран
